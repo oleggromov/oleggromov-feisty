@@ -1,0 +1,3 @@
+component: AboutPage
+content: index.md
+menu: ../menu/index.yml

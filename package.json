@@ -1,0 +1,7 @@
+{
+  "name": "oleggromov-feisty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Oleg Gromov <mail@oleggromov.com>",
+  "license": "MIT",
+}
