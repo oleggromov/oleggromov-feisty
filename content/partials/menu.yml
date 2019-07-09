@@ -1,6 +1,6 @@
 text: about.md
 items:
-  - title: About →
+  - title: About
     url: /about
-  - title: ← Articles list
+  - title: Articles list
     url: /
