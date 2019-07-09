@@ -1,3 +1,2 @@
-component: ArticlesList
+component: ArticleList
 list: ./!(about)/index.yml
-menu: ../partials/menu/index.yml
