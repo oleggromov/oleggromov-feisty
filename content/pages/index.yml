@@ -1,0 +1,3 @@
+component: ArticlesList
+list: ./!(about)/index.yml
+menu: ../partials/menu/index.yml

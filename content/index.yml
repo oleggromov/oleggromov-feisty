@@ -1,2 +1,0 @@
-component: ArticlesList
-list: ./!(about|_*)/index.yml
