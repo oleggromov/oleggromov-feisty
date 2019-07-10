@@ -1,2 +1,2 @@
-component: ArticleList
+page: index
 list: ./!(about)/index.yml
