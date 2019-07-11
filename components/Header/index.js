@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Avatar from '../Avatar'
+import Text from '../Text'
 import LogoSVG from './LogoSVG'
 import HamburgerClosed from './HamburgerClosed'
 import HamburgerOpen from './HamburgerOpen'
@@ -24,7 +25,7 @@ const Header = ({ menu }) => {
       <div className="header-menu-avatar">
         <Avatar />
       </div>
-      <div className="header-menu-text" dangerouslySetInnerHTML={{__html: menu.text }} />
+      <Text content={menu.text} />
       <nav className="header-menu-nav">
         <a className="header-menu-link" href={menu.items.articles.url}>
           <span>{menu.items.articles.title}</span>

@@ -11,7 +11,7 @@ const Experience = ({ title, items, closing }) =>
       <Text content={item.text} />
     </div>)}
 
-    <div dangerouslySetInnerHTML={{__html: closing}} />
+    <Text content={closing} />
   </>
 
 export default Experience

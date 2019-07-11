@@ -1,4 +1,5 @@
 import React from 'react'
+import Text from '../Text'
 import './footer.css'
 
 const Footer = ({ copyright, author, generator }) =>
@@ -7,7 +8,7 @@ const Footer = ({ copyright, author, generator }) =>
       {copyright.replace('{{NOW}}', (new Date).getFullYear())}
       <span className="footer-author">{author}</span>
     </p>
-    <p dangerouslySetInnerHTML={{__html: generator.replace(/<.*?p>/, '')}} />
+    <Text content={generator} />
   </div>
 
 

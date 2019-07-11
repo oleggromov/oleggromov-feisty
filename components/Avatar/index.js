@@ -1,6 +1,6 @@
 import React from 'react'
 import './avatar.css'
-import avatar from './avatar.jpg'
+import avatar from './oleggromov-avatar.jpg'
 
 const Avatar = () => <div className="avatar">
   <div className="avatar-image">
