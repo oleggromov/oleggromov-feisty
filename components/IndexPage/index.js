@@ -1,9 +1,6 @@
 import React from 'react'
-import HTMLTemplate from '../HTMLTemplate'
 
-const IndexPage = data =>
-  <HTMLTemplate>
-    <h1>Index Page</h1>
-  </HTMLTemplate>
+const IndexPage = ({ data }) =>
+  <h1>Index Page</h1>
 
 export default IndexPage

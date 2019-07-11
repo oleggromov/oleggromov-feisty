@@ -1,9 +1,6 @@
 import React from 'react'
-import HTMLTemplate from '../HTMLTemplate'
 
-const ArticlePage = data =>
-  <HTMLTemplate>
-    <h1>Article Page</h1>
-  </HTMLTemplate>
+const ArticlePage = ({ data }) =>
+  <h1>Article Page</h1>
 
 export default ArticlePage
