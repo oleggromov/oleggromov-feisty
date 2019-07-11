@@ -1,4 +1,14 @@
 page: about
 content: index.md
+experience:
+  title: Experience Highlights
+  items:
+    - period: August 2018 - Present
+      text: ./toptal.md
+    - period: November 2017 - March 2018
+      text: ./klarna.md
+    - period: March 2014 - March 2017
+      text: ./yandex.md
+  closing: ./full-history.md
 meta:
   title: About Oleg Gromov

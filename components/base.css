@@ -1,9 +1,20 @@
 html, body {
   margin: 0;
   padding: 0;
-  font: normal 16px/1.4 "PT Serif", serif;
+  font: normal 17px/1.5 "PT Serif", serif;
+}
+
+a {
+  color: #f00;
 }
 
 p {
   margin: 0.5em 0;
+}
+
+h2 {
+  margin: 2em 0 1em;
+  font-size: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
