@@ -1,3 +1,14 @@
 .footer {
-  padding: 50px;
+  color: #888;
+  font-size: 12px;
+  padding: 20px;
+}
+
+.footer-author {
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: #888;
 }
