@@ -1,0 +1,8 @@
+.text p {}
+
+.text h2 {
+  margin: 2em 0 1em;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}

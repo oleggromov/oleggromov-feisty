@@ -1,15 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Layout from '../Layout'
+import Header from '../Header'
+import Avatar from '../Avatar'
 import Footer from '../Footer'
+import Text from '../Text'
 import './about.css'
-import './reset.css'
+import '../base.css'
 
 const AboutPage = ({ data }) => {
-  const [count, setCount] = useState(0)
-
   return <>
-    <h1 className="about-page" onClick={() => setCount(count + 1)}>About page: {count} clicks</h1>
-    <pre>{JSON.stringify(data, null, 2)}</pre>
-    <Footer />
+    <Layout>
+      <Header menu={data.common.menu} />
+      <Avatar /> 
+      <Text content={data.data.content} />
+      <Footer {...data.common.footer} />
+    </Layout>
   </>
 }
 

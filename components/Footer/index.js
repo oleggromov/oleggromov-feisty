@@ -7,7 +7,7 @@ const Footer = ({ copyright, author, generator }) =>
       {copyright.replace('{{NOW}}', (new Date).getFullYear())}
       <span className="footer-author">{author}</span>
     </p>
-    <p dangerouslySetInnerHTML={{__html: generator.replace(/<\/?p>/, '')}} />
+    <p dangerouslySetInnerHTML={{__html: generator.replace(/<.*?p>/, '')}} />
   </div>
 
 

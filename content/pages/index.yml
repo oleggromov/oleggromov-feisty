@@ -1,2 +1,4 @@
 page: index
 list: ./!(about)/index.yml
+meta:
+  title: GROMOV 
