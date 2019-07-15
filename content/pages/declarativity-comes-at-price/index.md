@@ -2,6 +2,8 @@
 
 There is a widely held notion, and I agree, that declarative code is better than imperative. It is less error-prone, usually much more eloquent and neat and thus much more maintainable. It is a good principle to follow on a day-to-day basis when you use existing declarative libraries like the JavaScript standard library (`Array`/`Object` methods etc.), underscore/lodash or React. However, when it comes to making a decision to either write some declarative code (and therefore much more generalized) or just leave an imperative ad hoc solution, I suggest thinking at least twice.
 
+![Cover from the Dev.to](cover.png)
+
 Every algorithm has specific complexity; not only does it have computational complexity (declared by means of time/memory it takes to run on different input sizes), but also a *complexity of writing and understanding the code* that implements it. The latter primarily falls to programmers who work with the code, and in the world of budgets and deadlines is also a valid point of concern.
 
 What I state in this article’s title, *declarativity comes at a price*, can be split in a few theses.
@@ -9,6 +11,8 @@ What I state in this article’s title, *declarativity comes at a price*, can be
 ## Implementation Cost Might Be Higher
 
 Whenever you decide to write something declaratively and have already implemented required primitives, like `map` or `filter` for arrays, you might be fine. Someone has already spent time writing and debugging it, and the only thing is left to do is understand how these primitives work and build your own algorithm of these small pieces. What is even better, once you understand how these building blocks work you acquire a rare skill of writing concise code with ease, which must be appreciated by virtually any good programmer in the world.
+
+![Smaller cover](alt/cover.png)
 
 On the other hand, when a problem you’re solving or a solution you’re picking is not so common and you cannot find needed “blocks”, you might be facing a tough decision of implementing them on your own. Sometimes generalization and abstraction require much more effort you will or can make.
 
