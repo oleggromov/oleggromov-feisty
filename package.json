@@ -4,9 +4,5 @@
   "main": "index.js",
   "author": "Oleg Gromov <mail@oleggromov.com>",
   "license": "MIT",
-  "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
-  }
+  "dependencies": {}
 }

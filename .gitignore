@@ -1,5 +1,7 @@
 .DS_Store
 node_modules/
+# as a symlink
+node_modules
 .cache/
 .feisty/
 build/
