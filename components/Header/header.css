@@ -66,12 +66,29 @@
   text-decoration: underline;
 }
 
+.header-menu-link.active span {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .header-menu-link:first-child:before {
   content: '← ';
+}
+.header-menu-link.active:first-child {
+  padding-left: 1em;
+}
+.header-menu-link.active:first-child:before {
+  content: '';
 }
 
 .header-menu-link:last-child:after {
   content: ' →';
+}
+.header-menu-link.active:last-child {
+  padding-right: 1em;
+}
+.header-menu-link.active:last-child:after {
+  content: '';
 }
 
 .header-menu-overlay {

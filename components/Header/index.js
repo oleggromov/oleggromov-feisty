@@ -6,6 +6,12 @@ import HamburgerClosed from './HamburgerClosed'
 import HamburgerOpen from './HamburgerOpen'
 import './header.css'
 
+const renderMenuItem = ({ url, title, active }) => {
+  return <a className={active ? "header-menu-link active" : "header-menu-link"} href={url}>
+    <span>{title}</span>
+  </a>
+}
+
 const Header = ({ menu }) => {
   const [isOpen, setIsOpen] = useState(false)
   const headerClass = isOpen ? 'header_open' : ''
@@ -26,13 +32,10 @@ const Header = ({ menu }) => {
         <Avatar />
       </div>
       <Text content={menu.text} />
+
       <nav className="header-menu-nav">
-        <a className="header-menu-link" href={menu.items.articles.url}>
-          <span>{menu.items.articles.title}</span>
-        </a>
-        <a className="header-menu-link" href={menu.items.about.url}>
-          <span>{menu.items.about.title}</span>
-        </a>
+        {renderMenuItem(menu.items.articles)}
+        {renderMenuItem(menu.items.about)}
       </nav>
     </div>
     <div className="header-menu-overlay"></div>

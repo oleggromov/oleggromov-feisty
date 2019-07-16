@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Header'
 import {Helmet} from 'react-helmet'
+import '../base.css'
 import './layout.css'
 import favicon from '../favicon-32.png'
 

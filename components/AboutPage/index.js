@@ -4,7 +4,6 @@ import Avatar from '../Avatar'
 import Footer from '../Footer'
 import Experience from '../Experience'
 import Text from '../Text'
-import '../base.css'
 
 const AboutPage = ({ data }) => {
   return <Layout menu={data.common.menu} title={data.data.meta.title}>
