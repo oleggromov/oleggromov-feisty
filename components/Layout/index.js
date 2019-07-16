@@ -12,6 +12,7 @@ const Layout = ({ children, menu, title }) =>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
       <link href={favicon} rel="icon" />
+      <link rel="prefetch" href="/about" />
     </Helmet>
 
     <div className="layout">

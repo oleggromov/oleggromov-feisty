@@ -7,7 +7,8 @@ import HamburgerOpen from './HamburgerOpen'
 import './header.css'
 
 const renderMenuItem = ({ url, title, active }) => {
-  return <a className={active ? "header-menu-link active" : "header-menu-link"} href={url}>
+  const classes = active ? "header-menu-link active" : "header-menu-link"
+  return <a className={classes} href={!active && url}>
     <span>{title}</span>
   </a>
 }

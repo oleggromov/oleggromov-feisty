@@ -2,6 +2,10 @@
   margin-top: 1.5em;
 }
 
+.experience-highlight a {
+  color: black;
+}
+
 .experience-period {
   color: #888;
 }

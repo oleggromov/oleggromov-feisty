@@ -1,0 +1,19 @@
+.article-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 8em;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.article-caption-title {
+  margin: 0;
+  font-size: 120%;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.article-caption-date {
+  color: #888;
+}

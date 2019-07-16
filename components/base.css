@@ -4,6 +4,15 @@ html, body {
   font: normal 17px/1.5 "PT Serif", serif;
 }
 
+article,
+section,
+header,
+aside,
+nav {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: #f00;
 }

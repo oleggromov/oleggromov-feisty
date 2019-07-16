@@ -1,1 +1,1 @@
-[My full employment history is available on LinkedIn](https://www.linkedin.com/in/oleggromov/)
+[See my full employment history](https://www.linkedin.com/in/oleggromov/) on LinkedIn.

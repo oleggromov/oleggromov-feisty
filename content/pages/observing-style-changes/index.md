@@ -1,5 +1,3 @@
-# Observing Style Changes 👁
-
 While working on one of my inspirational OSS projects, I found out that there's currently no way to observe element style changes. At least I couldn't find any mentions of library-like solutions for that. I assume that the reason for that might be the fact it's hard to understand whether or not the styles have changed.
 
 So, I decided to write my own library and called it `SauronStyle`. Please take a look and [give it a try](https://github.com/oleggromov/sauron-style) if you need anything like that for your project.
