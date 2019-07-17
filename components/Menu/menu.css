@@ -1,0 +1,41 @@
+.menu {}
+
+.menu-nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-link {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-link span {
+  text-decoration: underline;
+}
+
+.menu-link.active span {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-link:first-child:before {
+  content: '← ';
+}
+.menu-link.active:first-child {
+  padding-left: 1em;
+}
+.menu-link.active:first-child:before {
+  content: '';
+}
+
+.menu-link:last-child:after {
+  content: ' →';
+}
+.menu-link.active:last-child {
+  padding-right: 1em;
+}
+.menu-link.active:last-child:after {
+  content: '';
+}

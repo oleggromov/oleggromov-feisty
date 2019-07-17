@@ -1,45 +1,36 @@
 import React, { useState } from 'react'
-import Avatar from '../Avatar'
-import Text from '../Text'
 import LogoSVG from './LogoSVG'
 import HamburgerClosed from './HamburgerClosed'
 import HamburgerOpen from './HamburgerOpen'
+import Menu from '../Menu'
 import './header.css'
-
-const renderMenuItem = ({ url, title, active }) => {
-  const classes = active ? "header-menu-link active" : "header-menu-link"
-  return <a className={classes} href={!active && url}>
-    <span>{title}</span>
-  </a>
-}
 
 const Header = ({ menu }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const headerClass = isOpen ? 'header_open' : ''
+  const barClass = isOpen ? 'header-bar_open' : ''
+  const overlayClass = isOpen ? 'header-overlay_open' : ''
+  const menuClass = isOpen ? 'header-menu_open' : ''
   const triggerMenu = () => setIsOpen(!isOpen)
 
-  return <div className={`header ${headerClass}`}>
-    <div className="header-logo">
-      <LogoSVG />
-    </div>
-
-    <div className="header-menu" onClick={triggerMenu}>
-      <div className="header-menu-closed"><HamburgerClosed /></div>
-      <div className="header-menu-open"><HamburgerOpen /></div>
-    </div>
-
-    <div className="header-menu-container">
-      <div className="header-menu-avatar">
-        <Avatar />
+  return <div className="header">
+    <div className={`header-bar ${barClass}`}>
+      <div className="header-logo">
+        <LogoSVG />
       </div>
-      <Text content={menu.text} />
 
-      <nav className="header-menu-nav">
-        {renderMenuItem(menu.items.articles)}
-        {renderMenuItem(menu.items.about)}
-      </nav>
+      <div className="header-hamburger" onClick={triggerMenu}>
+        <div className="header-hamburger-closed">
+          <HamburgerClosed />
+        </div>
+        <div className="header-hamburger-open">
+          <HamburgerOpen />
+        </div>
+      </div>
     </div>
-    <div className="header-menu-overlay"></div>
+    <div className={`header-menu ${menuClass}`}>
+      <Menu text={menu.text} items={menu.items} />
+    </div>
+    <div className={`header-overlay ${overlayClass}`}></div>
   </div>
 }
 
