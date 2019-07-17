@@ -5,10 +5,13 @@ import '../base.css'
 import './layout.css'
 import favicon from '../favicon-32.png'
 
-const Layout = ({ children, menu, title }) =>
-  <>
+const Layout = ({ children, common, title, isIndex = false }) => {
+  const { menu, titleSuffix } = common
+  const fullTitle = isIndex ? title : `${title} — ${titleSuffix}`
+
+  return <>
     <Helmet>
-      <title>{title}</title>
+      <title>{fullTitle}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
       <link href={favicon} rel="icon" />
@@ -20,5 +23,7 @@ const Layout = ({ children, menu, title }) =>
       {children}
     </div>
   </>
+}
+
 
 export default Layout

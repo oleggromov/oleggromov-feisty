@@ -13,7 +13,7 @@ const renderAricles = articles =>
       url={url} />)
 
 const ArticlesListPage = ({ data }) =>
-  <Layout menu={data.common.menu} title={data.data.meta.title}>
+  <Layout common={data.common} title={data.data.meta.title} isIndex={true}>
     {renderAricles(data.data.list)}
     <Footer {...data.common.footer} />
   </Layout>

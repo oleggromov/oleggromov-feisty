@@ -6,7 +6,7 @@ import Experience from '../Experience'
 import Text from '../Text'
 
 const AboutPage = ({ data }) => {
-  return <Layout menu={data.common.menu} title={data.data.meta.title}>
+  return <Layout common={data.common} title={data.data.meta.title}>
     <Avatar />
     <Text content={data.data.content} />
     <Experience {...data.data.experience} />

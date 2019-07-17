@@ -4,7 +4,7 @@ import Footer from '../Footer'
 import Text from '../Text'
 
 const ArticlePage = ({ data }) => {
-  return <Layout menu={data.common.menu} title={data.data.meta.title}>
+  return <Layout common={data.common} title={data.data.meta.title}>
     <Text content={data.data.content} />
     <Footer {...data.common.footer} />
   </Layout>
