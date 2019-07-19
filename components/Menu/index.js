@@ -5,7 +5,7 @@ import './menu.css'
 
 const renderMenuItem = ({ url, title, active }) => {
   const classes = active ? "menu-link active" : "menu-link"
-  return <a className={classes} href={!active && url}>
+  return <a className={classes} href={active ? '' : url}>
     <span>{title}</span>
   </a>
 }

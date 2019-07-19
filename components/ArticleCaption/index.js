@@ -7,7 +7,7 @@ const formatDate = str =>
 
 const ArticleCaption = ({ title, published, excerpt, more, url }) => {
   return <article>
-    <header class="article-caption">
+    <header className="article-caption">
       <h1 className="article-caption-title">{title}</h1>
       <p className="article-caption-date">{formatDate(published)}</p>
     </header>
