@@ -1,4 +1,4 @@
 page: index
-list: ./!(about)/index.yml
+pages: ^(?!(\/about|\/)$)
 meta:
   title: GROMOV
