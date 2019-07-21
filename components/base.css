@@ -21,9 +21,14 @@ p {
   margin: 0.5em 0;
 }
 
+h1,
 h2 {
   margin: 2em 0 1em;
   font-size: 100%;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+}
+
+h1 {
+  font-size: 150%;
 }

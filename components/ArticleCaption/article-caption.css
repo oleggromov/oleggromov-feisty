@@ -7,11 +7,22 @@
   text-align: center;
 }
 
+.article-caption_title {
+  min-height: 12em;
+}
+
 .article-caption-title {
   margin: 0;
-  font-size: 130%;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+}
+
+h1.article-caption-title {
+  font-size: 150%;
+}
+
+h2.article-caption-title {
+  font-size: 130%;
 }
 
 .article-caption-date {

@@ -1,0 +1,9 @@
+.article-list-heading {
+  margin: 3em 0 2em;
+  font-size: 200%;
+  text-align: center;
+}
+
+.article-list-intro a {
+  color: black;
+}

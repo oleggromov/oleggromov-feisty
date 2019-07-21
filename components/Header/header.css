@@ -13,7 +13,7 @@
 
 .header-overlay {
   z-index: 5;
-  position: fixed;
+  position: absolute;
   top: -1000px;
   right: 0;
   height: 100%;
@@ -25,6 +25,7 @@
 }
 
 .header-overlay.header-overlay_open {
+  position: fixed;
   top: 0;
   opacity: 1;
   transition-delay: 1ms;
