@@ -13,3 +13,7 @@
 .footer a {
   color: #888;
 }
+
+.footer span > span {
+  display: none;
+}
