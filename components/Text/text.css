@@ -21,3 +21,9 @@
   margin: 0 0.1em;
   padding: 0.15em 0.25em;
 }
+
+/* Turn off Highlight.js styles */
+.text .hljs {
+  overflow-x: visible;
+  padding: 0;
+}

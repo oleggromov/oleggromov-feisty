@@ -5,7 +5,7 @@ import Text from '../Text'
 import ArticleCaption from '../ArticleCaption'
 
 const ArticlePage = ({ data }) => {
-  return <Layout common={data.common} title={data.data.meta.title}>
+  return <Layout common={data.common} title={data.data.meta.title} useHighlight>
     <article>
       <ArticleCaption title={data.data.title} published={data.data.published} isH1={true} />
       <Text content={data.data.content} />
