@@ -22,7 +22,8 @@ p {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 2em 0 1em;
   font-size: 100%;
   text-transform: uppercase;
@@ -31,4 +32,9 @@ h2 {
 
 h1 {
   font-size: 150%;
+}
+
+h3 {
+  text-transform: none;
+  letter-spacing: 0;
 }
