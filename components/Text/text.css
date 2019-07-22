@@ -1,3 +1,23 @@
-.text .gist {
+.text em {
+  font-style: normal;
+}
+
+
+.text > pre,
+.text p > code {
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 75%;
+}
+
+.text > pre {
+  overflow: scroll;
   margin: 2em 0;
+  padding: 1em;
+}
+
+.text p > code {
+  margin: 0 0.1em;
+  padding: 0.15em 0.25em;
 }
