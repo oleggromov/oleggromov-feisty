@@ -2,7 +2,6 @@
   font-style: normal;
 }
 
-
 .text > pre {
   overflow: scroll;
   margin: 2em 0;
@@ -28,6 +27,7 @@
 }
 
 .text figure.source-image img {
+  display: block;
   max-width: 100%;
 }
 

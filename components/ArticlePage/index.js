@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Layout from '../Layout'
 import Footer from '../Footer'
 import Text from '../Text'
-import ArticleCaption from '../ArticleCaption'
+import PageCaption from '../PageCaption'
 import ArticleClosing from '../ArticleClosing'
 
 const ArticlePage = ({ data }) => {
@@ -15,7 +15,7 @@ const ArticlePage = ({ data }) => {
 
   return <Layout common={data.common} title={data.data.meta.title} useHighlight>
     <article>
-      <ArticleCaption title={data.data.title} published={data.data.published} isH1={true} />
+      <PageCaption title={data.data.title} date={data.data.published} isH1 />
       <Text content={data.data.content} />
       <ArticleClosing published={data.data.published} closing={data.data.closing} />
     </article>

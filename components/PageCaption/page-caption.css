@@ -1,4 +1,4 @@
-.article-caption {
+.page-caption {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,24 +7,24 @@
   text-align: center;
 }
 
-.article-caption_title {
+.page-caption_title {
   min-height: 12em;
 }
 
-.article-caption-title {
+.page-caption-title {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
 
-h1.article-caption-title {
+h1.page-caption-title {
   font-size: 150%;
 }
 
-h2.article-caption-title {
+h2.page-caption-title {
   font-size: 130%;
 }
 
-.article-caption-date {
+.page-caption-date {
   color: #888;
 }

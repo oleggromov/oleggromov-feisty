@@ -1,5 +1,6 @@
 page: about
-content: index.md
+content: interests.md
+closing: interests-closing.md
 experience:
   title: Experience Highlights
   items:
@@ -10,5 +11,6 @@ experience:
     - period: March 2014 - March 2017
       text: ./yandex.md
   closing: ./full-history.md
+title: Oleg's Areas of Interest and Experience
 meta:
-  title: Oleg’s Profile
+  title: Oleg's Areas of Interest and Experience
