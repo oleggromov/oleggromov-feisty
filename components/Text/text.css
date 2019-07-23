@@ -22,6 +22,10 @@
   padding: 0.15em 0.25em;
 }
 
+.text a {
+  color: black;
+}
+
 /* Turn off Highlight.js styles */
 .text .hljs {
   overflow-x: visible;
