@@ -26,6 +26,20 @@
   color: black;
 }
 
+.text figure.source-image {
+  margin: 2em 0;
+  padding: 0;
+}
+
+.text figure.source-image img {
+  max-width: 100%;
+}
+
+.text figure.source-image figcaption {
+  margin-top: 0.5em;
+  color: #888;
+}
+
 /* Turn off Highlight.js styles */
 .text .hljs {
   overflow-x: visible;
