@@ -6,3 +6,5 @@ node_modules
 .feisty/
 build/
 .yalc/
+.firebaserc
+.firebase/
