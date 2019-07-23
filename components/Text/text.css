@@ -36,6 +36,20 @@
   color: #888;
 }
 
+.text ul,
+.text ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+.text li {
+  margin-top: 0.5em;
+}
+
+.text li:first-child {
+  margin-top: 0;
+}
+
 /* Turn off Highlight.js styles */
 .text .hljs {
   overflow-x: visible;

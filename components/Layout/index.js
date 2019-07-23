@@ -21,7 +21,7 @@ const Layout = ({ children, common, title, useHighlight = false }) => {
       hljs.registerLanguage('javascript', javascript)
       hljs.registerLanguage('xml', xml)
       hljs.registerLanguage('css', css)
-      hljs.initHighlightingOnLoad()
+      hljs.initHighlighting()
     }
   })
 
