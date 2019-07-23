@@ -1,8 +1,6 @@
 import React from 'react'
+import FormattedDate from '../FormattedDate'
 import './article-caption.css'
-
-const formatDate = str =>
-  new Date(str).toLocaleDateString('en-US', { month: 'long', year: 'numeric', day: 'numeric'  })
 
 const ArticleCaption = ({ title, published, isH1 = false }) => {
   const Tag = isH1 ? 'h1' : 'h2'
@@ -10,7 +8,9 @@ const ArticleCaption = ({ title, published, isH1 = false }) => {
 
   return <header className={`article-caption ${className}`}>
     <Tag className="article-caption-title">{title}</Tag >
-    <p className="article-caption-date">{formatDate(published)}</p>
+    <p className="article-caption-date">
+      <FormattedDate date={published} />
+    </p>
   </header>
 }
 

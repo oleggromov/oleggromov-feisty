@@ -125,5 +125,3 @@ I'm also not quite sure that I haven't forgotten any other ways to affect elemen
 - actually use it in one of your projects! 👻
 
 Thanks for your attention!
-
-P.S. This article is also (and originally) [published for Dev.to community](https://dev.to/oleggromov/observing-style-changes---d4f). Possibly, the discussion, if it starts, will happen there.
