@@ -1,0 +1,11 @@
+page: article
+cover: be-productive-cover.jpg
+content: index.md
+title: 'Be Productive: How and Why?'
+published: 2019-07-24
+written: 2019-07-24
+excerpt: excerpt.md
+more: Here's my take on being productive and happy.
+# tags: productivity
+meta:
+  title: 'Be Productive: How and Why?'
