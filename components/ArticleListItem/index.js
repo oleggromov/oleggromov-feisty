@@ -1,7 +1,6 @@
 import React from 'react'
 import Text from '../Text'
 import PageCaption from '../PageCaption'
-import './article-list-item.css'
 
 const ArticleListItem = ({ title, published, excerpt, more, url }) => {
   return <article>

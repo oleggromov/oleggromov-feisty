@@ -3,7 +3,7 @@ import Layout from '../Layout'
 import Text from '../Text'
 import Footer from '../Footer'
 import ArticleListItem from '../ArticleListItem'
-import './article-list.css'
+import PageCaption from '../PageCaption'
 
 const renderAricles = articles =>
   articles.map(page => {
@@ -20,8 +20,8 @@ const renderAricles = articles =>
 
 const ArticlesListPage = ({ data }) =>
   <Layout common={data.common} title={data.data.meta.title}>
-    <h1 className="article-list-heading">{data.data.title}</h1>
-    <Text content={data.data.content} className="article-list-intro" />
+    <PageCaption title={data.data.title} isH1 />
+    <Text content={data.data.content} />
     {renderAricles(data.data.pages)}
     <Footer {...data.common.footer} />
   </Layout>

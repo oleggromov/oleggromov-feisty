@@ -15,7 +15,7 @@ const ArticlePage = ({ data }) => {
 
   return <Layout common={data.common} title={data.data.meta.title} useHighlight>
     <article>
-      <PageCaption title={data.data.title} date={data.data.published} isH1 />
+      <PageCaption title={data.data.title} date={data.data.published} cover={data.data.cover} isH1 />
       <Text content={data.data.content} />
       <ArticleClosing published={data.data.published} closing={data.data.closing} />
     </article>
