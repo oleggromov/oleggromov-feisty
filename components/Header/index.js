@@ -1,7 +1,5 @@
 import React from 'react'
 import Logo from '../Logo'
-import HamburgerClosed from './HamburgerClosed'
-import HamburgerOpen from './HamburgerOpen'
 import Menu from '../Menu'
 import throttle from './throttle'
 import './header.css'
@@ -38,6 +36,7 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
+    this.triggerLogo()
     window.addEventListener('scroll', this.triggerLogo)
   }
 
@@ -61,12 +60,8 @@ class Header extends React.Component {
         </div>
 
         <div className="header-hamburger" onClick={this.triggerMenu}>
-          <div className="header-hamburger-closed">
-            <HamburgerClosed />
-          </div>
-          <div className="header-hamburger-open">
-            <HamburgerOpen />
-          </div>
+          <div className="header-hamburger-closed"></div>
+          <div className="header-hamburger-open"></div>
         </div>
       </div>
       <div className={`header-menu ${menuClass}`}>

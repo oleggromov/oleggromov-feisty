@@ -63,6 +63,16 @@
 
 .header-hamburger-open {
   display: none;
+  width: 20px;
+  height: 20px;
+  background: inline('./hamburger-open.svg');
+}
+
+.header-hamburger-closed {
+  width: 20px;
+  height: 14px;
+  margin-top: 3px;
+  background: inline('./hamburger-closed.svg');
 }
 
 .header-bar_open .header-hamburger-open {
