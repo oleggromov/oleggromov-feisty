@@ -6,13 +6,13 @@ import Experience from '../Experience'
 import Text from '../Text'
 import './about.css'
 
-const AboutPage = ({ data }) => {
-  return <Layout common={data.common} title={data.data.meta.title}>
-    <PageCaption title={data.data.title} isH1 />
-    <Text content={data.data.content} />
-    <Text className="about-interests-closing" content={data.data.closing} />
-    <Experience {...data.data.experience} />
-    <Footer {...data.common.footer} />
+const AboutPage = ({ meta, data, common }) => {
+  return <Layout common={common} title={meta.title}>
+    <PageCaption title={data.title} isH1 />
+    <Text content={data.content} />
+    <Text className="about-interests-closing" content={data.closing} />
+    <Experience {...data.experience} />
+    <Footer {...common.footer} />
   </Layout>
 }
 

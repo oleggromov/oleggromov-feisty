@@ -14,17 +14,17 @@ class ArticlePage extends React.Component {
   }
 
   render() {
-    const { data } = this.props
-    return <Layout common={data.common} title={data.data.meta.title} useHighlight>
+    const { meta, data, common } = this.props
+    return <Layout common={common} title={meta.title} useHighlight>
       <article>
-        <PageCaption title={data.data.title} date={data.data.published} cover={data.data.cover} isH1 />
-        <Text content={data.data.content} />
-        <ArticleClosing published={data.data.published} closing={data.data.closing} />
+        <PageCaption title={data.title} date={data.published} cover={data.cover} isH1 />
+        <Text content={data.content} />
+        <ArticleClosing published={data.published} closing={data.closing} />
       </article>
       <aside>
         <div id="disqus_thread" />
       </aside>
-      <Footer {...data.common.footer} />
+      <Footer {...common.footer} />
     </Layout>
   }
 }

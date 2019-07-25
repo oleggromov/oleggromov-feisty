@@ -22,22 +22,22 @@ const renderAricles = articles =>
       cover={cover} />
   })
 
-const IndexPage = ({ data }) => {
-  return <Layout common={data.common} title={data.data.meta.title} hideLogo hideLogoThreshold={150}>
+const IndexPage = ({ meta, data, common }) => {
+  return <Layout common={common} title={meta.title} hideLogo hideLogoThreshold={150}>
     <div className="index-logo">
-      <h1>{data.data.title}</h1>
+      <h1>{data.title}</h1>
       <Logo scale={2} />
     </div>
     <aside className="index-intro">
       <p>
-        <span>{data.data.intro_greeting}</span>
+        <span>{data.intro_greeting}</span>
         <Avatar inline />
-        <span><a href="/about">{data.data.intro_name}</a></span>
+        <span><a href="/about">{data.intro_name}</a></span>
       </p>
-      <Text content={data.data.content} />
+      <Text content={data.content} />
     </aside>
-    {renderAricles(data.data.pages)}
-    <Footer {...data.common.footer} />
+    {renderAricles(data.pages)}
+    <Footer {...common.footer} />
   </Layout>
 }
 
