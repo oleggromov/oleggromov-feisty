@@ -4,6 +4,14 @@
   padding-top: 10px;
 }
 
+.avatar_inline {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0;
+  margin-left: 0.5em;
+  margin-right: 0.2em
+}
+
 .avatar-image {
   overflow: hidden;
   width: 40vw;
@@ -13,8 +21,17 @@
   border-radius: 20vw;
 }
 
+.avatar_inline .avatar-image {
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+}
+
 .avatar img {
   display: block;
   width: 100%;
   height: 100%;
+  /* To obscure sharp edges */
+  transform: scale(1.01);
 }

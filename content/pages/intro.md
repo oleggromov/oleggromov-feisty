@@ -1,5 +1,3 @@
-I am Oleg Gromov,
+This website is a collection of my observations about developing software, leading and managing people & projects, and other things that I found worth sharing.
 
-Now I'm busy with finding out what my contribution to the world is, which leads to properly defining personal brand and messaging.
-
-This website is an exercise and, I believe, a valuable step in that direction. I write about #[software](/software), #[leadership](/leadership), and #[education](/education).
+I will be grateful if you comment on what you find interesting. It's good to have you here 😜

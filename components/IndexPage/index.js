@@ -5,6 +5,7 @@ import Footer from '../Footer'
 import ArticleListItem from '../ArticleListItem'
 import PageCaption from '../PageCaption'
 import Logo from '../Logo'
+import Avatar from '../Avatar'
 import './index-page.css'
 
 const renderAricles = articles =>
@@ -21,15 +22,23 @@ const renderAricles = articles =>
       cover={cover} />
   })
 
-const IndexPage = ({ data }) =>
-  <Layout common={data.common} title={data.data.meta.title} hideLogo hideLogoThreshold={150}>
+const IndexPage = ({ data }) => {
+  return <Layout common={data.common} title={data.data.meta.title} hideLogo hideLogoThreshold={150}>
     <div className="index-logo">
       <h1>{data.data.title}</h1>
       <Logo scale={2} />
     </div>
-    <Text content={data.data.content} />
+    <aside className="index-intro">
+      <p>
+        <span>{data.data.intro_greeting}</span>
+        <Avatar inline />
+        <span><a href="/about">{data.data.intro_name}</a></span>
+      </p>
+      <Text content={data.data.content} />
+    </aside>
     {renderAricles(data.data.pages)}
     <Footer {...data.common.footer} />
   </Layout>
+}
 
 export default IndexPage

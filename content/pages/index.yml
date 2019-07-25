@@ -2,5 +2,7 @@ page: index
 pages: ^(?!(\/about|\/)$)
 title: GROMOV
 content: intro.md
+intro_greeting: Hello, I am
+intro_name: Oleg Gromov,
 meta:
   title: GROMOV

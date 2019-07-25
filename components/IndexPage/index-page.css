@@ -8,3 +8,7 @@
 .index-logo h1 {
   display: none;
 }
+
+.index-intro a {
+  color: black;
+}

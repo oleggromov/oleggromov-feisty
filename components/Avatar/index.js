@@ -1,11 +1,19 @@
 import React from 'react'
 import './avatar.css'
 import avatar from './oleggromov-avatar.jpg'
+import avatar80px from '!!url-loader!./oleggromov-avatar-80px.jpg'
 
-const Avatar = () => <div className="avatar">
-  <div className="avatar-image">
-    <img src={avatar} alt="Oleg Gromov profile picture" />
-  </div>
-</div>
+const Avatar = ({ inline = false }) => {
+  const Tag = inline ? 'span' : 'div'
+  const className = inline ? 'avatar_inline' : ''
+  const image = inline ? avatar80px : avatar
+
+  return <Tag className={`avatar ${className}`}>
+    <Tag className="avatar-image">
+      <img src={image} alt="Oleg Gromov profile picture" />
+    </Tag>
+  </Tag>
+
+}
 
 export default Avatar
