@@ -36,12 +36,20 @@ class Layout extends React.Component {
 
   renderHelmet() {
     if (!this.state.client) {
+      const { GA_ID } = process.env
       return <Helmet>
         <title>{this.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link href={favicon} rel="icon" type="image/png" />
         <link rel="prefetch" href="/about" />
+        {GA_ID && <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
+        {GA_ID && <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}');
+        `}</script>}
       </Helmet>
     }
   }
