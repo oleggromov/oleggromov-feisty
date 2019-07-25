@@ -8,3 +8,4 @@ build/
 .yalc/
 .firebaserc
 .firebase/
+.env*

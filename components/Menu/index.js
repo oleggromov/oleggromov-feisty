@@ -4,10 +4,13 @@ import Text from '../Text'
 import './menu.css'
 
 const renderMenuItem = ({ url, title, active }) => {
+  const Tag = active ? 'span' : 'a'
   const classes = active ? "menu-link active" : "menu-link"
-  return <a className={classes} href={active ? '' : url}>
+  const href = active ? undefined : url
+
+  return <Tag className={classes} href={href}>
     <span>{title}</span>
-  </a>
+  </Tag>
 }
 
 const Menu = ({ text, items }) => {

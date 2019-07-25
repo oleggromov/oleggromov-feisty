@@ -13,7 +13,13 @@ import './layout.css'
 import favicon from '../favicon-32.png'
 
 class Layout extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { client: false }
+  }
+
   componentDidMount() {
+    this.setState({ client: true })
     if (this.props.useHighlight) {
       hljs.registerLanguage('javascript', javascript)
       hljs.registerLanguage('xml', xml)
@@ -28,18 +34,24 @@ class Layout extends React.Component {
     return titleSuffix === title ? title : `${title} — ${titleSuffix}`
   }
 
-  render() {
-    const { children, common, title, hideLogo, hideLogoThreshold } = this.props
-    const { menu, titleSuffix } = common
-
-    return <>
-      <Helmet>
+  renderHelmet() {
+    if (!this.state.client) {
+      return <Helmet>
         <title>{this.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link href={favicon} rel="icon" type="image/png" />
         <link rel="prefetch" href="/about" />
       </Helmet>
+    }
+  }
+
+  render() {
+    const { children, common, title, hideLogo, hideLogoThreshold } = this.props
+    const { menu, titleSuffix } = common
+
+    return <>
+      {this.renderHelmet()}
 
       <div className="layout">
         <Header menu={menu} hideLogo={hideLogo} hideLogoThreshold={hideLogoThreshold} />
