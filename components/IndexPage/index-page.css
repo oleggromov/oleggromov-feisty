@@ -1,0 +1,10 @@
+.index-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12em;
+}
+
+.index-logo h1 {
+  display: none;
+}

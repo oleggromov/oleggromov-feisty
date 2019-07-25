@@ -1,6 +1,6 @@
 page: index
 pages: ^(?!(\/about|\/)$)
-title: Observations
+title: GROMOV
 content: intro.md
 meta:
-  title: Observations
+  title: GROMOV

@@ -53,6 +53,14 @@
   position: relative;
 }
 
+.header-logo {
+  transition: opacity 0.4s;
+}
+
+.header-logo_hidden {
+  opacity: 0;
+}
+
 .header-hamburger-open {
   display: none;
 }

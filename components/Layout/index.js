@@ -13,7 +13,7 @@ import './layout.css'
 import favicon from '../favicon-32.png'
 
 
-const Layout = ({ children, common, title, useHighlight = false }) => {
+const Layout = ({ children, common, title, useHighlight = false, hideLogo, hideLogoThreshold }) => {
   const { menu, titleSuffix } = common
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Layout = ({ children, common, title, useHighlight = false }) => {
     </Helmet>
 
     <div className="layout">
-      <Header menu={menu} />
+      <Header menu={menu} hideLogo={hideLogo} hideLogoThreshold={hideLogoThreshold} />
       {children}
     </div>
   </>
