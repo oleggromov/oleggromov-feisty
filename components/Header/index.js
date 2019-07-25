@@ -3,6 +3,7 @@ import Logo from '../Logo'
 import HamburgerClosed from './HamburgerClosed'
 import HamburgerOpen from './HamburgerOpen'
 import Menu from '../Menu'
+import throttle from './throttle'
 import './header.css'
 
 class Header extends React.Component {
@@ -14,7 +15,7 @@ class Header extends React.Component {
     }
 
     this.triggerMenu = this.triggerMenu.bind(this)
-    this.triggerLogo = this.triggerLogo.bind(this)
+    this.triggerLogo = throttle(this.triggerLogo.bind(this), 100)
   }
 
   triggerMenu() {
