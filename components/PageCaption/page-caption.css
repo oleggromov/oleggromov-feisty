@@ -42,12 +42,8 @@ h2.page-caption-title {
   color: #888;
 }
 
-.page-caption_image .page-caption-title {
-  color: white;
-  text-shadow: 2px 2px 0 black;
-}
-
+.page-caption_image .page-caption-title,
 .page-caption_image .page-caption-date {
   color: white;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 0 2px 0 black;
 }
