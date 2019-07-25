@@ -11,6 +11,10 @@ The best application of my skills so far has been the area where software engine
 
 Turns out, it’s usually about accumulating deep insights in some field and using them to tackle meaningful business challenges with software, supporting engineers in doing their best, and communicating a lot.
 
-Aside from those ‘softer’ skills, I’m experienced in full-stack JavaScript development, digital marketing, data science and statistics, and a bit of mathematical modeling.
+Aside from those ‘softer’ skills, I’m experienced in a few major fields.
 
-In my free time, I enjoy studying advanced math, helping people understand technology, and taking care of my family.
+- **Design, development, and maintenance of web projects** through their entire life cycle, with the emphasis on full-stack JavaScript development.
+- **Engineering management of teams** up to 12 people large, while being deeply involved and responsible for people, product, architecture and technology stack, and ultimately delivery on time.
+- **Digital marketing** with the focus on the conversion analysis and optimization and respect to web application performance and SEO.
+
+In my free time, I enjoy studying advanced math, helping people understand technology, and having fun with my family.
