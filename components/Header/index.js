@@ -14,6 +14,7 @@ class Header extends React.Component {
 
     this.triggerMenu = this.triggerMenu.bind(this)
     this.triggerLogo = throttle(this.triggerLogo.bind(this), 100)
+    this.headerRoot = React.createRef()
   }
 
   triggerMenu() {
@@ -28,11 +29,20 @@ class Header extends React.Component {
     if (this.state.menuOpen) {
       this.setState({ logoHidden: false })
     } else {
-      const hide = window.scrollY < this.props.hideLogoThreshold
+      const hide = window.scrollY < this.hideLogoThreshold
       if (hide !== this.state.logoHidden) {
         this.setState({ logoHidden: hide })
       }
     }
+  }
+
+  get hideLogoThreshold() {
+    if (!this._hideLogoThreshold) {
+      const cssValue = getComputedStyle(this.headerRoot.current)
+        .getPropertyValue('--hide-logo-threshold')
+      this._hideLogoThreshold = Number(cssValue.replace('px', ''))
+    }
+    return this._hideLogoThreshold
   }
 
   componentDidMount() {
@@ -53,7 +63,7 @@ class Header extends React.Component {
     const menuClass = menuOpen ? 'header-menu_open' : ''
     const logoClass = logoHidden ? 'header-logo_hidden' : ''
 
-    return <div className="header">
+    return <div className="header" ref={this.headerRoot}>
       <div className={`header-bar ${barClass}`}>
         <div className={`header-logo ${logoClass}`}>
           <Logo />

@@ -3,6 +3,13 @@
   position: sticky;
   top: 0;
   padding: 0 1em;
+  --hide-logo-threshold: 150px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    --hide-logo-threshold: 180px
+  }
 }
 
 .header-bar {
