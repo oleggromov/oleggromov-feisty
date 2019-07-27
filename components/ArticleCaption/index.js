@@ -6,19 +6,25 @@ const renderDate = date => (<p className="article-caption-date">
   <FormattedDate date={date} />
 </p>)
 
-const ArticleCaption = ({ title, date, cover, isH1 = false }) => {
-  const Tag = isH1 ? 'h1' : 'h2'
-  const className = [
-    isH1 ? 'article-caption_h1' : '',
-    cover ? 'article-caption_image' : ''
+const ArticleCaption = ({ title, url, date, cover, isPageCaption = false }) => {
+  const Tag = isPageCaption ? 'h1' : 'h2'
+  const WrapperTag = isPageCaption ? 'div' : 'a'
+  const className = cover ? 'article-caption_image' : ''
+  const containerClassName = [
+    isPageCaption ? 'article-caption-container_h1' : '',
+    cover ? 'article-caption-container_image' : ''
   ].join(' ')
 
-  const style = cover ? { '--background-image': `url(${cover})` } : {}
-
-  return <header className={`article-caption ${className}`} style={style}>
-    <Tag className="article-caption-title">{title}</Tag >
-    {date && renderDate(date)}
-  </header>
+  // ToDo: what if image is narrower than the container?
+  return <WrapperTag href={!isPageCaption ? url : null} className={`article-caption ${className}`}>
+    <header className={`article-caption-container ${containerClassName}`}>
+      <Tag className="article-caption-title">{title}</Tag>
+      {cover && <div className="article-caption-image">
+        <img src={cover} alt={`${title} - cover image`} />
+      </div>}
+      {date && renderDate(date)}
+    </header>
+  </WrapperTag>
 }
 
 export default ArticleCaption

@@ -19,7 +19,7 @@ class ArticlePage extends React.Component {
     const { meta, data, common } = this.props
     return <Layout common={common} title={data.title} useHighlight>
       <article className="article-content">
-        <ArticleCaption title={data.title} date={data.published} cover={data.cover} isH1 />
+        <ArticleCaption title={data.title} date={data.published} cover={data.cover} isPageCaption />
         <Text content={data.content} />
         <ArticleClosing published={data.published} closing={data.closing} />
         <ReadNext nextUrl={meta.next} pagesList={common.pages} defaultMenu={common.menu.items.articles} />
