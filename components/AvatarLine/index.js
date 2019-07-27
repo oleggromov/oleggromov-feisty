@@ -1,10 +1,11 @@
 import React from 'react'
 import Avatar from '../Avatar'
+import './avatar-line.css'
 
-const AvatarLine = ({ data, isLink = false }) => {
-  const name = isLink ? <a href="/about">{data.name}</a> : data.name
+const AvatarLine = ({ data, aboutLink = null }) => {
+  const name = aboutLink ? <a href={aboutLink}>{data.name}</a> : data.name
 
-  return <p>
+  return <p className="avatar-line">
     <span>{data.greeting}</span>
     <Avatar inline />
     <span>{name}</span>,

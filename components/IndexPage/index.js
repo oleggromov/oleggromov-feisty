@@ -29,7 +29,7 @@ const IndexPage = ({ meta, data, common }) => {
       <Logo scale={2} />
     </Caption>
     <aside className="index-intro">
-      <AvatarLine data={data.avatarLine} isLink />
+      <AvatarLine data={data.avatarLine} aboutLink={common.menu.items.about.url} />
       <Text content={data.content} />
     </aside>
     <main>
