@@ -63,7 +63,9 @@ class Layout extends React.Component {
 
       <div className="layout">
         <Header menu={menu} hideLogo={hideLogo} hideLogoThreshold={hideLogoThreshold} />
-        {children}
+        <div className="layout-container">
+          {children}
+        </div>
       </div>
     </>
   }

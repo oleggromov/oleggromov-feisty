@@ -1,3 +1,10 @@
-.layout {
-  padding: 0 20px;
+.layout-container {
+  padding: 0 1em;
+}
+
+@media (min-width: 768px) {
+  .layout-container {
+    max-width: 38em;
+    margin: 0 auto;
+  }
 }

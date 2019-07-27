@@ -1,7 +1,7 @@
 .menu {}
 
 .menu-nav {
-  margin-top: 20px;
+  margin-top: 1em;
   display: flex;
   justify-content: space-around;
 }

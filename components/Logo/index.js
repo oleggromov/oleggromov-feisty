@@ -4,7 +4,8 @@ import './logo.css'
 
 const Logo = ({ scale = 1 }) => {
   const style = scale !== 1 ? {
-    transform: `scale(${scale})`
+    width: `${Math.ceil(124 * scale)}px`,
+    height: `${Math.ceil(16 * scale)}px`
   } : {}
 
   return <div className="logo" style={style}>

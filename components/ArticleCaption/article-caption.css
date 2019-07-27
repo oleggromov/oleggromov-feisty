@@ -9,8 +9,8 @@ a.article-caption {
 }
 
 .article-caption_image {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -1em;
+  margin-right: -1em;
 }
 
 .article-caption-container {
@@ -45,7 +45,7 @@ a.article-caption {
   justify-content: flex-end;
   min-height: 20em;
   margin-bottom: 2em;
-  padding: 20px;
+  padding: 1em;
   color: white;
   text-align: center;
 }
