@@ -1,0 +1,4 @@
+menu: menu.yml
+footer: footer.yml
+titleSuffix: GROMOV
+pages: ^(?!(\/about|\/)$)

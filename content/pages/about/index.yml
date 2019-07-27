@@ -1,6 +1,6 @@
 page: about
 title: About
-avatarLine: ../avatar-line.yml
+avatarLine: ../../partials/avatar-line.yml
 content: content.md
 closing: interests-closing.md
 experience:

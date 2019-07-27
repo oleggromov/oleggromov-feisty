@@ -1,5 +1,5 @@
 page: index
 pages: ^(?!(\/about|\/)$)
-title: GROMOV
-content: intro.md
-avatarLine: ./avatar-line.yml
+title: Article List
+intro: intro.md
+avatarLine: ../partials/avatar-line.yml

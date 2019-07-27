@@ -30,7 +30,7 @@ const IndexPage = ({ meta, data, common }) => {
     </Caption>
     <aside className="index-intro">
       <AvatarLine data={data.avatarLine} aboutLink={common.menu.items.about.url} />
-      <Text content={data.content} />
+      <Text content={data.intro} />
     </aside>
     <main>
       {renderAricles(data.pages)}
