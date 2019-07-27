@@ -2,7 +2,6 @@ page: index
 pages: ^(?!(\/about|\/)$)
 title: GROMOV
 content: intro.md
-intro_greeting: Hello, I am
-intro_name: Oleg Gromov,
+avatarLine: ./avatar-line.yml
 meta:
   title: GROMOV

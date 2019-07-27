@@ -1,5 +1,6 @@
 page: about
-content: interests.md
+avatarLine: ../avatar-line.yml
+content: content.md
 closing: interests-closing.md
 experience:
   title: Experience Highlights
@@ -11,6 +12,6 @@ experience:
     - period: March 2014 - March 2017
       text: ./yandex.md
   closing: ./full-history.md
-title: Oleg's Areas of Interest and Experience
+title: About
 meta:
-  title: Oleg's Areas of Interest and Experience
+  title: About

@@ -3,9 +3,9 @@ import Layout from '../Layout'
 import Text from '../Text'
 import Footer from '../Footer'
 import ArticleListItem from '../ArticleListItem'
-import PageCaption from '../PageCaption'
+import Caption from '../Caption'
 import Logo from '../Logo'
-import Avatar from '../Avatar'
+import AvatarLine from '../AvatarLine'
 import './index-page.css'
 
 const renderAricles = articles =>
@@ -24,19 +24,17 @@ const renderAricles = articles =>
 
 const IndexPage = ({ meta, data, common }) => {
   return <Layout common={common} title={meta.title} hideLogo hideLogoThreshold={150}>
-    <div className="index-logo">
-      <h1>{data.title}</h1>
+    <Caption>
+      <h1 className="index-page-invisible">{data.title}</h1>
       <Logo scale={2} />
-    </div>
+    </Caption>
     <aside className="index-intro">
-      <p>
-        <span>{data.intro_greeting}</span>
-        <Avatar inline />
-        <span><a href="/about">{data.intro_name}</a></span>
-      </p>
+      <AvatarLine data={data.avatarLine} isLink />
       <Text content={data.content} />
     </aside>
-    {renderAricles(data.pages)}
+    <main>
+      {renderAricles(data.pages)}
+    </main>
     <Footer {...common.footer} />
   </Layout>
 }

@@ -5,11 +5,13 @@
 }
 
 .avatar_inline {
+  position: relative;
+  top: 3px;
   display: inline-block;
   vertical-align: bottom;
   padding: 0;
   margin-left: 0.5em;
-  margin-right: 0.2em
+  margin-right: 0.25em
 }
 
 .avatar-image {

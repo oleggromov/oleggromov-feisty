@@ -1,15 +1,3 @@
-.index-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 7em;
-  padding-bottom: 2em;
-}
-
-.index-logo h1 {
+.index-page-invisible {
   display: none;
-}
-
-.index-intro a {
-  color: black;
 }

@@ -1,0 +1,7 @@
+.caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 7em;
+  margin-bottom: 2em;
+}
