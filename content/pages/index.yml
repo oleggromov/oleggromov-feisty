@@ -3,5 +3,3 @@ pages: ^(?!(\/about|\/)$)
 title: GROMOV
 content: intro.md
 avatarLine: ./avatar-line.yml
-meta:
-  title: GROMOV

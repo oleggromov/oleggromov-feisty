@@ -7,4 +7,4 @@ excerpt: excerpt.md
 more: What I state in this article’s title can be split in a few theses.
 tags: software
 meta:
-  title: Declarativity Comes at a Price
+  next: /array-splice-error-pattern

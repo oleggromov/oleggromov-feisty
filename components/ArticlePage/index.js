@@ -4,6 +4,8 @@ import Footer from '../Footer'
 import Text from '../Text'
 import ArticleCaption from '../ArticleCaption'
 import ArticleClosing from '../ArticleClosing'
+import ReadNext from '../ReadNext'
+import './article-page.css'
 
 class ArticlePage extends React.Component {
   componentDidMount() {
@@ -15,13 +17,14 @@ class ArticlePage extends React.Component {
 
   render() {
     const { meta, data, common } = this.props
-    return <Layout common={common} title={meta.title} useHighlight>
-      <article>
+    return <Layout common={common} title={data.title} useHighlight>
+      <article className="article-content">
         <ArticleCaption title={data.title} date={data.published} cover={data.cover} isH1 />
         <Text content={data.content} />
         <ArticleClosing published={data.published} closing={data.closing} />
+        <ReadNext nextUrl={meta.next} pagesList={common.pages} defaultMenu={common.menu.items.articles} />
       </article>
-      <aside>
+      <aside id="comments">
         <div id="disqus_thread" />
       </aside>
       <Footer {...common.footer} />

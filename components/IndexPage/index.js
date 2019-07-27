@@ -23,7 +23,7 @@ const renderAricles = articles =>
   })
 
 const IndexPage = ({ meta, data, common }) => {
-  return <Layout common={common} title={meta.title} hideLogo hideLogoThreshold={150}>
+  return <Layout common={common} title={data.title} hideLogo hideLogoThreshold={150}>
     <Caption>
       <h1 className="index-page-invisible">{data.title}</h1>
       <Logo scale={2} />

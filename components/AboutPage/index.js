@@ -8,7 +8,7 @@ import AvatarLine from '../AvatarLine'
 import './about.css'
 
 const AboutPage = ({ meta, data, common }) => {
-  return <Layout common={common} title={meta.title}>
+  return <Layout common={common} title={data.title}>
     <Caption>
       <h1>{data.title}</h1>
     </Caption>

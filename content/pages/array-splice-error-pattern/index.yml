@@ -6,4 +6,4 @@ excerpt: excerpt.md
 more: Already understood what happens?
 tags: software
 meta:
-  title: Array.splice Error Pattern
+  next: /declarativity-comes-at-price

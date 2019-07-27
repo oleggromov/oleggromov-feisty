@@ -1,0 +1,35 @@
+.read-next {
+  margin: 1em 0;
+}
+
+.read-next h3 {
+  margin-top: 0;
+}
+
+.read-next ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.read-next-default::before {
+  content: '← ';
+}
+
+.read-next-default {
+  white-space: nowrap;
+}
+
+.read-next-default a {
+  color: black;
+}
+
+.read-next-suggested {
+  margin-left: 2em;
+}
+
+.read-next-suggested a {
+  color: red;
+}
