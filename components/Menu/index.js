@@ -8,7 +8,7 @@ const renderMenuItem = ({ url, title, active }) => {
   const classes = active ? 'menu-link active' : 'menu-link'
   const href = active ? undefined : url
 
-  return <Tag className={classes} href={href}>
+  return <Tag className={classes} href={href} key={url}>
     {title}
   </Tag>
 }
@@ -21,8 +21,7 @@ const Menu = ({ text, items }) => {
     </div>
 
     <nav className="menu-nav">
-      {renderMenuItem(items.articles)}
-      {renderMenuItem(items.about)}
+      {Object.keys(items).map(key => renderMenuItem(items[key]))}
     </nav>
   </div>
 }
