@@ -37,13 +37,17 @@
 }
 
 .page-about-social li.github::before {
-  background-image: url('./github-64.png');
+  background-image: inline('./github-64.png');
 }
 
 .page-about-social li.twitter::before {
-  background-image: url('./twitter-64.png');
+  background-image: inline('./twitter-64.png');
 }
 
 .page-about-social li.facebook::before {
-  background-image: url('./facebook-64.png');
+  background-image: inline('./facebook-64.png');
+}
+
+.page-about-closing a.internal {
+  color: red;
 }

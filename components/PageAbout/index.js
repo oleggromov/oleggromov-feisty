@@ -35,6 +35,7 @@ const PageAbout = ({ meta, data, common }) => {
           {Object.keys(data.links).map(key => renderLink(key, data.links[key]))}
         </ul>
       </aside>
+      <Text className="page-about-text page-about-closing" content={data.closing} />
     </main>
     <Footer {...common.footer} />
   </Layout>
