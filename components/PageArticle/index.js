@@ -22,8 +22,8 @@ class PageArticle extends React.Component {
         <ArticleCaption title={data.title} date={data.published} cover={data.cover} isPageCaption />
         <Text content={data.content} />
         <ArticleClosing published={data.published} closing={data.closing} />
-        <ReadNext nextUrl={meta.next} pagesList={common.pages} defaultMenu={common.menu.items.articles} />
       </article>
+      <ReadNext nextUrl={meta.next} pagesList={common.pages} defaultMenu={common.menu.items.articles} />
       <aside id="comments">
         <div id="disqus_thread" />
       </aside>

@@ -45,7 +45,7 @@ class Layout extends React.Component {
         <link href={favicon32} rel="icon" type="image/png" />
         <link href={favicon180} rel="apple-touch-icon" type="image/png" />
         <link rel="prefetch" href="/about" />
-        {GA_ID && <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
+        {GA_ID && <script async="async" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
         {GA_ID && <script>{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

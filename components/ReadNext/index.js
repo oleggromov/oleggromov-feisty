@@ -8,6 +8,7 @@ const getNextPage = (url, pagesList) => {
 
 const ReadNext = ({ nextUrl, pagesList, defaultMenu }) => {
   const nextPage = getNextPage(nextUrl, pagesList)
+  // ToDo: maybe change h3 to h2 for better outlines
   return <nav className="read-next">
     <h3>I suggest proceeding with:</h3>
     <ul>
