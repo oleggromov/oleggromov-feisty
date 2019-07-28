@@ -1,0 +1,7 @@
+.page-index-article {
+  margin-top: 4em;
+}
+
+.page-index-article:first-child {
+  margin-top: 0;
+}

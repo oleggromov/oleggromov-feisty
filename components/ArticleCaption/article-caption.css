@@ -1,8 +1,7 @@
-/* ToDo: refactor this! */
-
 .article-caption {
   display: block;
   color: black;
+  margin-bottom: 2em;
 }
 
 a.article-caption {
@@ -10,7 +9,7 @@ a.article-caption {
   cursor: pointer;
 }
 
-.article-caption_image {
+.article-caption_cover {
   margin-left: -1em;
   margin-right: -1em;
 }
@@ -19,20 +18,13 @@ a.article-caption {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   min-height: 8em;
-  margin-top: 4em;
   text-align: center;
 }
 
-article:first-child .article-caption-container {
-  margin-top: 0;
-}
-
-.article-caption-container_h1,
-article:first-child .article-caption-container_h1 {
+.article-caption_page-caption .article-caption-container {
   min-height: 12em;
-  margin-top: 2em;
 }
 
 .article-caption-image {
@@ -44,30 +36,25 @@ article:first-child .article-caption-container_h1 {
   bottom: 0;
 }
 
+/* ToDo: what if image is narrower than the container? */
 .article-caption-image img {
   max-height: 100%;
 }
 
-.article-caption-container_image {
-  justify-content: flex-end;
+.article-caption_cover .article-caption-container {
   min-height: 20em;
-  margin-bottom: 2em;
   padding: 1em;
   color: white;
-  text-align: center;
-}
-.article-caption-container_image.article-caption-container_h1 {
-  margin-top: 0;
 }
 
-.article-caption-container_image::after {
+.article-caption_cover .article-caption-container::after {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 50%);
+  background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 50%);
 }
 
 .article-caption-title,
@@ -76,17 +63,13 @@ article:first-child .article-caption-container_h1 {
   position: relative;
 }
 
-.article-caption-title {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-}
-
 h1.article-caption-title {
+  margin: 0;
   font-size: 150%;
 }
 
 h2.article-caption-title {
+  margin: 0;
   font-size: 130%;
 }
 
@@ -94,8 +77,8 @@ h2.article-caption-title {
   color: #888;
 }
 
-.article-caption_image .article-caption-title,
-.article-caption_image .article-caption-date {
+.article-caption_cover .article-caption-title,
+.article-caption_cover .article-caption-date {
   color: white;
   text-shadow: 0 1px 0 black;
 }

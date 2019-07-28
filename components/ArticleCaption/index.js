@@ -7,18 +7,20 @@ const renderDate = date => (<p className="article-caption-date">
 </p>)
 
 const ArticleCaption = ({ title, url, date, cover, isPageCaption = false }) => {
-  const Tag = isPageCaption ? 'h1' : 'h2'
+  const HeaderTag = isPageCaption ? 'h1' : 'h2'
   const WrapperTag = isPageCaption ? 'div' : 'a'
-  const className = cover ? 'article-caption_image' : ''
-  const containerClassName = [
-    isPageCaption ? 'article-caption-container_h1' : '',
-    cover ? 'article-caption-container_image' : ''
+  const className = [
+    cover ? 'article-caption_cover' : '',
+    isPageCaption ? 'article-caption_page-caption' : ''
   ].join(' ')
+  const href = !isPageCaption ? url : null
 
   // ToDo: what if image is narrower than the container?
-  return <WrapperTag href={!isPageCaption ? url : null} className={`article-caption ${className}`}>
-    <header className={`article-caption-container ${containerClassName}`}>
-      <Tag className="article-caption-title">{title}</Tag>
+  return <WrapperTag href={href} className={`article-caption ${className}`}>
+    <header className="article-caption-container">
+      <HeaderTag className="article-caption-title">
+        {title}
+      </HeaderTag>
       {cover && <div className="article-caption-image">
         <img src={cover} alt={`${title} - cover image`} />
       </div>}

@@ -6,6 +6,7 @@ import ArticleCaption from '../ArticleCaption'
 import Caption from '../Caption'
 import Logo from '../Logo'
 import AvatarLine from '../AvatarLine'
+import './page-index.css'
 
 const renderAricles = articles =>
   articles.map(page => {
@@ -13,7 +14,7 @@ const renderAricles = articles =>
     const { url } = page.meta
 
     // ToDo: refactor the component so it doesn't rely on index
-    return <article key={url}>
+    return <article className="page-index-article" key={url}>
       <ArticleCaption title={title} url={url} date={published} cover={cover} />
       <Text content={excerpt} />
       <p>
