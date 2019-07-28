@@ -23,7 +23,7 @@ const renderAricles = articles =>
   })
 
 const IndexPage = ({ meta, data, common }) => {
-  return <Layout common={common} title={data.title} hideLogo>
+  return <Layout common={common} title={data.title} hideLogo noLogoLink>
     <Caption>
       <Logo scale={2} />
     </Caption>

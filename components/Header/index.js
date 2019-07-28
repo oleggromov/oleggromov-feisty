@@ -59,7 +59,7 @@ class Header extends React.Component {
   }
 
   render() {
-    const { menu } = this.props
+    const { menu, noLogoLink } = this.props
     const { menuOpen, logoHidden } = this.state
 
     const barClass = menuOpen ? 'header-bar_open' : ''
@@ -67,10 +67,14 @@ class Header extends React.Component {
     const menuClass = menuOpen ? 'header-menu_open' : ''
     const logoClass = logoHidden ? 'header-logo_hidden' : ''
 
+    const LogoWrapper = noLogoLink ? 'div' : 'a'
+
     return <div className="header" ref={this.headerRoot}>
       <div className={`header-bar ${barClass}`}>
         <div className={`header-logo ${logoClass}`}>
-          <Logo />
+          <LogoWrapper className="header-logo-link" href={noLogoLink ? null : '/'}>
+            <Logo />
+          </LogoWrapper>
         </div>
 
         <div className="header-hamburger" onClick={this.triggerMenu}>
@@ -84,6 +88,10 @@ class Header extends React.Component {
       <div className={`header-overlay ${overlayClass}`}></div>
     </div>
   }
+}
+
+Header.defaultProps = {
+  noLogoLink: false
 }
 
 export default Header

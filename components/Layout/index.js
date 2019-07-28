@@ -55,14 +55,14 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { children, common, title, hideLogo } = this.props
+    const { children, common, title, hideLogo, noLogoLink } = this.props
     const { menu, titleSuffix } = common
 
     return <>
       {this.renderHelmet()}
 
       <div className="layout">
-        <Header menu={menu} hideLogo={hideLogo} />
+        <Header menu={menu} hideLogo={hideLogo} noLogoLink={noLogoLink} />
         <div className="layout-container">
           {children}
         </div>

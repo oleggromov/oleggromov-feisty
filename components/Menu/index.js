@@ -5,7 +5,7 @@ import './menu.css'
 
 const renderMenuItem = ({ url, title, active }) => {
   const Tag = active ? 'span' : 'a'
-  const classes = active ? "menu-link active" : "menu-link"
+  const classes = active ? 'menu-link active' : 'menu-link'
   const href = active ? undefined : url
 
   return <Tag className={classes} href={href}>
