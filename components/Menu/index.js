@@ -9,14 +9,16 @@ const renderMenuItem = ({ url, title, active }) => {
   const href = active ? undefined : url
 
   return <Tag className={classes} href={href}>
-    <span>{title}</span>
+    {title}
   </Tag>
 }
 
 const Menu = ({ text, items }) => {
   return <div className="menu">
-    <Avatar />
-    <Text content={text} />
+    <div className="menu-intro">
+      <Avatar />
+      <Text content={text} />
+    </div>
 
     <nav className="menu-nav">
       {renderMenuItem(items.articles)}

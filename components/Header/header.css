@@ -8,6 +8,10 @@
 
 @media (min-width: 768px) {
   .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
     --hide-logo-threshold: 180px
   }
 }
@@ -17,6 +21,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1em 0;
+}
+
+@media (min-width: 768px) {
+  .header-bar {
+    position: absolute;
+    left: 1em;
+  }
 }
 
 .header-overlay {
@@ -52,6 +63,12 @@
 
 .header-hamburger {
   height: 20px;
+}
+
+@media (min-width: 768px) {
+  .header-hamburger {
+    display: none;
+  }
 }
 
 .header-logo,
@@ -120,6 +137,16 @@ a.header-logo-link {
   transition-property: opacity, top;
   transition-duration: 0.4s, 1ms;
   transition-delay: 1ms, 0.4s;
+}
+
+@media (min-width: 768px) {
+  .header-menu {
+    position: static;
+    top: 0;
+    padding: 0;
+    background: transparent;
+    opacity: 1;
+  }
 }
 
 .header-menu.header-menu_open {
