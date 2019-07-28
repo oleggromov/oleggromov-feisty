@@ -24,7 +24,7 @@ class PageArticle extends React.Component {
         <ArticleClosing published={data.published} closing={data.closing} />
       </article>
       <ReadNext nextUrl={meta.next} pagesList={common.pages} defaultMenu={common.menu.items.articles} />
-      <aside id="comments">
+      <aside className="page-article-comments" id="comments">
         <div id="disqus_thread" />
       </aside>
       <Footer {...common.footer} />
