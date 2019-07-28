@@ -1,4 +1,49 @@
+.page-about-text h2 {
+  margin-top: 3em;
+}
+
 /* ToDo: make all CTA links to be styled the same */
 .page-about-cta a {
   color: red;
+}
+
+.page-about-social a {
+  color: black;
+  text-decoration: none;
+}
+
+.page-about-social a span {
+  text-decoration: underline;
+}
+
+.page-about-social ul {
+  padding: 0;
+  list-style: none;
+}
+
+.page-about-social li {
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0 0.5em 0.5em;
+}
+
+.page-about-social li::before {
+  content: '';
+  display: block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  background-size: cover;
+}
+
+.page-about-social li.github::before {
+  background-image: url('./github-64.png');
+}
+
+.page-about-social li.twitter::before {
+  background-image: url('./twitter-64.png');
+}
+
+.page-about-social li.facebook::before {
+  background-image: url('./facebook-64.png');
 }

@@ -14,3 +14,14 @@ experience:
     - period: March 2014 - March 2017
       text: yandex.md
 experienceCta: experience-cta.md
+social: social.md
+links:
+  github:
+    url: https://github.com/oleggromov
+    title: '@oleggromov'
+  twitter:
+    url: https://twitter.com/oleggromov
+    title: '@oleggromov'
+  facebook:
+    url: https://www.facebook.com/oleg.v.gromov
+    title: Oleg Gromov

@@ -4,7 +4,7 @@ import './experience.css'
 
 const Experience = ({ title, items, closing }) =>
   <>
-    <h2>{title}</h2>
+    <h2 className="experience-title">{title}</h2>
 
     {items.map(item => <div key={item.period} className="experience-highlight">
       <p className="experience-period">{item.period}</p>
