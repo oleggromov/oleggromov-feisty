@@ -3,5 +3,9 @@
   align-items: center;
   justify-content: center;
   min-height: 7em;
-  margin-bottom: 2em;
+  margin: 1em 0 2em;
+}
+
+.caption h1 {
+  margin: 0;
 }
