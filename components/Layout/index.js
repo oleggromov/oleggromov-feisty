@@ -10,7 +10,8 @@ import 'highlight.js/styles/github.css'
 
 import '../base.css'
 import './layout.css'
-import favicon from '../favicon-32.png'
+import favicon32 from '../favicon-32.png'
+import favicon180 from '../favicon-180.png'
 
 class Layout extends React.Component {
   constructor(props) {
@@ -41,7 +42,8 @@ class Layout extends React.Component {
         <title>{this.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
-        <link href={favicon} rel="icon" type="image/png" />
+        <link href={favicon32} rel="icon" type="image/png" />
+        <link href={favicon180} rel="apple-touch-icon" type="image/png" />
         <link rel="prefetch" href="/about" />
         {GA_ID && <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
         {GA_ID && <script>{`
@@ -50,6 +52,7 @@ class Layout extends React.Component {
           gtag('js', new Date());
           gtag('config', '${GA_ID}');
         `}</script>}
+        <meta charset="utf-8" />
       </Helmet>
     }
   }
