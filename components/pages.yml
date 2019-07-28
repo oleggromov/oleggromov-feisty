@@ -1,3 +1,4 @@
 index: PageIndex/index.js
 article: PageArticle/index.js
 about: PageAbout/index.js
+404: Page404/index.js

@@ -1,5 +1,5 @@
 page: index
-pages: ^(?!(\/about|\/)$)
+pages: ^(?!(\/about|\/|\/404)$)
 title: Article List
 intro: intro.md
 avatarLine: ../partials/avatar-line.yml
