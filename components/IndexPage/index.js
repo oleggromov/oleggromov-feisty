@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../Layout'
 import Text from '../Text'
 import Footer from '../Footer'
-import ArticleListItem from '../ArticleListItem'
+import ArticleCaption from '../ArticleCaption'
 import Caption from '../Caption'
 import Logo from '../Logo'
 import AvatarLine from '../AvatarLine'
@@ -12,13 +12,14 @@ const renderAricles = articles =>
     const { title, published, excerpt, more, cover } = page.data
     const { url } = page.meta
 
-    return <ArticleListItem key={url}
-      title={title}
-      published={published}
-      excerpt={excerpt}
-      more={more}
-      url={url}
-      cover={cover} />
+    // ToDo: refactor the component so it doesn't rely on index
+    return <article key={url}>
+      <ArticleCaption title={title} url={url} date={published} cover={cover} />
+      <Text content={excerpt} />
+      <p>
+        <a href={url}>{more}</a>
+      </p>
+    </article>
   })
 
 const IndexPage = ({ meta, data, common }) => {
@@ -32,7 +33,9 @@ const IndexPage = ({ meta, data, common }) => {
     </aside>
     <main>
       <h1>{data.title}</h1>
-      {renderAricles(data.pages)}
+      <div>
+        {renderAricles(data.pages)}
+      </div>
     </main>
     <Footer {...common.footer} />
   </Layout>

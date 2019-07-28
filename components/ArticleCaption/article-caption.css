@@ -23,6 +23,10 @@ a.article-caption {
   text-align: center;
 }
 
+article:first-child .article-caption-container {
+  margin-top: 0;
+}
+
 .article-caption-container_h1 {
   min-height: 12em;
   margin-top: 2em;
