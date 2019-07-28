@@ -1,7 +1,3 @@
-Since 2007, I have been involved into various software projects of different scale and worked for different organizations, small and large.
-
-![Oleg Gromov in France](oleggromov-france.jpg "This is me in France, with the beautiful Pyrenees in the background.")
-
 ## Areas of Interest
 The best application of my skills so far has been the area where software engineering, product mindset, and critical thinking overlap.
 

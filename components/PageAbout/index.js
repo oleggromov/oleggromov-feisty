@@ -14,9 +14,11 @@ const PageAbout = ({ meta, data, common }) => {
         <h1>{data.title}</h1>
       </Caption>
       <AvatarLine data={data.avatarLine} />
-      <Text content={data.content} />
-      <Text className="page-about-cta" content={data.closing} />
+      <Text content={data.intro} />
+      <Text content={data.interests} />
+      <Text className="page-about-cta" content={data.interestsCta} />
       <Experience {...data.experience} />
+      <Text className="page-about-cta" content={data.experienceCta} />
     </main>
     <Footer {...common.footer} />
   </Layout>

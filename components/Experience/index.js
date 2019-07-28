@@ -10,8 +10,6 @@ const Experience = ({ title, items, closing }) =>
       <p className="experience-period">{item.period}</p>
       <Text content={item.text} />
     </div>)}
-
-    <Text className="experience-closing" content={closing} />
   </>
 
 export default Experience
