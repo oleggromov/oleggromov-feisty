@@ -46,12 +46,16 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    this.triggerLogo()
-    window.addEventListener('scroll', this.triggerLogo)
+    if (this.props.hideLogo) {
+      this.triggerLogo()
+      window.addEventListener('scroll', this.triggerLogo)
+    }
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.triggerLogo)
+    if (this.props.hideLogo) {
+      window.removeEventListener('scroll', this.triggerLogo)
+    }
   }
 
   render() {
