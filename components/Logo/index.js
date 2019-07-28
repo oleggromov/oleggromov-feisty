@@ -3,6 +3,7 @@ import Gromov from './gromov.svg.js'
 import './logo.css'
 
 const Logo = ({ scale = 1 }) => {
+  // ToDo: Replace with percentages?
   const style = scale !== 1 ? {
     width: `${Math.ceil(124 * scale)}px`,
     height: `${Math.ceil(16 * scale)}px`

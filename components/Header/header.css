@@ -24,7 +24,9 @@
   position: absolute;
   top: -1000px;
   right: 0;
-  height: 100%;
+  /* This is required to handle iOS subtle bug when window height changes
+     during scrolling when the bottom bar disappears. */
+  height: 150%;
   left: 0;
   opacity: 0;
   transition-property: opacity, top;
