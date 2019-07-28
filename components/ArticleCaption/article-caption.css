@@ -1,3 +1,5 @@
+/* ToDo: refactor this! */
+
 .article-caption {
   display: block;
   color: black;
@@ -27,7 +29,8 @@ article:first-child .article-caption-container {
   margin-top: 0;
 }
 
-.article-caption-container_h1 {
+.article-caption-container_h1,
+article:first-child .article-caption-container_h1 {
   min-height: 12em;
   margin-top: 2em;
 }
