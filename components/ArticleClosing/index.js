@@ -7,18 +7,23 @@ import './article-closing.css'
 
 const ArticleClosing = ({ published, closing }) => {
   return <div className="article-closing">
-    <Avatar />
-
-    <div className="article-closing-meta">
-      Published by Oleg Gromov<br />on <FormattedDate date={published} />
+    <div className="article-closing-avatar">
+      <Avatar articleClosing />
     </div>
 
-    <div className="article-closing-text">
-      <Text content={closing} />
-    </div>
+    <div className="article-closing-everything">
+      <div className="article-closing-meta">
+        <span>Published by Oleg Gromov</span>
+        <span>on <FormattedDate date={published} /></span>
+      </div>
 
-    <div className="article-closing-actions">
-      <a href="#comments" className="article-closing-cta">Leave a comment</a>
+      {closing && <div className="article-closing-text">
+        <Text content={closing} />
+      </div>}
+
+      <div className="article-closing-actions">
+        <a href="#comments" className="article-closing-cta">Leave a comment</a>
+      </div>
     </div>
   </div>
 }
