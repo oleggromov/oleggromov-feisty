@@ -7,7 +7,7 @@ import ArticleClosing from '../ArticleClosing'
 import ReadNext from '../ReadNext'
 import './page-article.css'
 
-class ArticlePage extends React.Component {
+class PageArticle extends React.Component {
   componentDidMount() {
     const disqus = document.createElement('script')
     disqus.src = '//oleggromov.disqus.com/embed.js'
@@ -32,4 +32,4 @@ class ArticlePage extends React.Component {
   }
 }
 
-export default ArticlePage
+export default PageArticle

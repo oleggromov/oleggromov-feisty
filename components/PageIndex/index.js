@@ -23,7 +23,7 @@ const renderAricles = articles =>
     </article>
   })
 
-const IndexPage = ({ meta, data, common }) => {
+const PageIndex = ({ meta, data, common }) => {
   return <Layout common={common} title={data.title} hideLogo noLogoLink>
     <Caption>
       <Logo scale={2} />
@@ -42,4 +42,4 @@ const IndexPage = ({ meta, data, common }) => {
   </Layout>
 }
 
-export default IndexPage
+export default PageIndex

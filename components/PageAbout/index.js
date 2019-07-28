@@ -7,17 +7,19 @@ import Text from '../Text'
 import AvatarLine from '../AvatarLine'
 import './page-about.css'
 
-const AboutPage = ({ meta, data, common }) => {
+const PageAbout = ({ meta, data, common }) => {
   return <Layout common={common} title={data.title}>
-    <Caption>
-      <h1>{data.title}</h1>
-    </Caption>
-    <AvatarLine data={data.avatarLine} />
-    <Text content={data.content} />
-    <Text className="page-about-cta" content={data.closing} />
-    <Experience {...data.experience} />
+    <main>
+      <Caption>
+        <h1>{data.title}</h1>
+      </Caption>
+      <AvatarLine data={data.avatarLine} />
+      <Text content={data.content} />
+      <Text className="page-about-cta" content={data.closing} />
+      <Experience {...data.experience} />
+    </main>
     <Footer {...common.footer} />
   </Layout>
 }
 
-export default AboutPage
+export default PageAbout
