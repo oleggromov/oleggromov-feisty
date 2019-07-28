@@ -1,3 +1,3 @@
-index: IndexPage/index.js
-article: ArticlePage/index.js
-about: AboutPage/index.js
+index: PageIndex/index.js
+article: PageArticle/index.js
+about: PageAbout/index.js

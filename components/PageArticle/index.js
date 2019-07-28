@@ -5,7 +5,7 @@ import Text from '../Text'
 import ArticleCaption from '../ArticleCaption'
 import ArticleClosing from '../ArticleClosing'
 import ReadNext from '../ReadNext'
-import './article-page.css'
+import './page-article.css'
 
 class ArticlePage extends React.Component {
   componentDidMount() {
@@ -18,7 +18,7 @@ class ArticlePage extends React.Component {
   render() {
     const { meta, data, common } = this.props
     return <Layout common={common} title={data.title} useHighlight>
-      <article className="article-content">
+      <article className="page-article-content">
         <ArticleCaption title={data.title} date={data.published} cover={data.cover} isPageCaption />
         <Text content={data.content} />
         <ArticleClosing published={data.published} closing={data.closing} />
