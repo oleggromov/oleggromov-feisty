@@ -14,10 +14,6 @@
   margin-right: 0.25em
 }
 
-.avatar_closing {
-
-}
-
 .avatar-image {
   overflow: hidden;
   width: 40vw;
@@ -39,7 +35,6 @@
   height: 8em;
   border-radius: 8em;
 }
-
 
 .avatar img {
   display: block;
