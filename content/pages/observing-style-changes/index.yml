@@ -3,7 +3,10 @@ content: index.md
 title: Observing Style Changes 👁
 published: 2018-02-24
 written: 2018-02-24
+updated:
+  - date: 2019-07-29
+    reason: Update the language and fix grammar issues
 excerpt: excerpt.md
 closing: closing.md
-more: Leaving the 'why?' behind the scene...
+more: Get to know how this is possible..
 tags: software

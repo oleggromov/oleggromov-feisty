@@ -1,30 +1,30 @@
 While working on one of my inspirational open-source projects, I found out that there's currently no way to observe element style changes. At least I couldn't find any mentions of library-like solutions for that. I assume that the reason for that might be the fact it's hard to understand whether or not the styles have changed.
 
-So, I decided to write my own library and called it `SauronStyle`. Please take a look and [give it a try](https://github.com/oleggromov/sauron-style) if you need anything like that for your project.
+So, I decided to build a tool and called it `SauronStyle`. Please take a look and [give it a try](https://github.com/oleggromov/sauron-style) if you need anything like that for your project.
 
 ## How to Observe
 
-Leaving the *why?* behind the scene, let's jump right to *how*. There're a few ways to update element styling I could remember:
+Leaving the *why?* behind the scene, let's jump right to *how*. There're a few ways to update element styling I could remember.
 
-- update its `class` or `style` directly
-- update its parents' attributes, respectively
-- insert or remove `style` or `link` elements anywhere in the document
+- Update its `class` or `style` directly.
+- Update its parents' attributes, respectively.
+- Insert or remove `style` or `link` elements anywhere in the document.
 
-In order to watch any of those, we need `MutationObserver` support - a DOM change observing interface supported in modern browsers (IE11+). I suppose that's the same that allows you to watch subtree or attribute modification in Elements pane of your favorite DevTools.
+To watch any of those, we need `MutationObserver` support - a DOM change observing interface supported in modern browsers (IE11+). I suppose that's the same that allows you to watch subtree or attribute modification in Elements pane of your favorite DevTools.
 
-So what does it provide us with? Simply the ability to listen to attribute changes (`class` and `style` fall in this category) as well as subtree modifications (external stylesheet insertion on removal lives here).
+So what does it provide us with? Simply the ability to subscribe to attribute changes (`class` and `style` fall in this category) as well as subtree modifications (external stylesheet insertion on removal lives here).
 
 ## How to Check for a Difference
 
-When we know *something has changed*, we should check if there are any *actual* changes since the changes we noticed might be totally unrelated. To do so, we will use `getComputedStyle` - a useful method on `window` supported by any modern browser starting IE9. What it does, is it returns a flat object of all CSS properties with values in a similar to CSS *computed* tab in Chrome.
+When we know something has changed, we should check if there are any actual changes since the changes we noticed might be unrelated. To do so, we will use `getComputedStyle` - a useful method on `window` supported by any modern browser starting from IE9. It returns a flat object of all CSS properties with values in a similar to CSS "computed style" tab in Chrome.
 
-Importantly, it returns a *live* [`CSSStyleDeclaration` instance](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration), which changes over time forcing us to keep a copy of it.
+Importantly, it returns a live [`CSSStyleDeclaration` instance](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration), which changes over time forcing us to keep a copy of it.
 
 ## Implementation sneak-peek
 
-The actual [source code](https://github.com/oleggromov/sauron-style) lives in the repository, being rather compact by the way, but it might be interesting for you to see some details.
+Even though you can find the [source code](https://github.com/oleggromov/sauron-style) in the Github repo, it might be interesting for you to see some details.
 
-First of all, I want to observe the watched element attributes changes. This is achieved easily:
+First of all, I want to subscribe to attributes changes of the element we're interested in. This can be easily achieved.
 
 ```javascript
 this.mutationObserver = new window.MutationObserver(this.checkDiff)
@@ -34,9 +34,9 @@ this.mutationObserver.observe(this.node, {
 })
 ```
 
-What this code does, is it creates a new instance of `MutationObserver` class and sends it a callback, `this.checkDiff`, as the only argument. Then it says: watch `this.node` for the changes in `style` and `class` attributes only and invoke the callback on these changes.
+This code creates a new instance of a `MutationObserver` and sends it a callback as the only argument. Then it says: watch `this.node` for the changes in `style` and `class` attributes only and invoke the callback once any of them changes.
 
-Later, in `this.checkDiff` we want to see if the actual styles have changed:
+Later, in `checkDiff` we want to see if computed styles have changed. It may very well happen a class or new inline styles are appended to the element but the element rendering doesn't change.
 
 ```javascript
 checkDiff () {
@@ -52,39 +52,51 @@ checkDiff () {
 }
 ```
 
-The code above gets the current style and compares it against the stored copy. Then, if there's any difference, we store the new one for the future and invoke a subscriber function if it has been set already.
+The code above gets the current style and compares it with the stored copy. Then, if there is any difference, we store the new one for the future and invoke subscriber function if it has been set already.
 
-`this.getStyle` returns a shallow copy of `this.computedStyle`.
+The `getStyle` method returns a shallow copy of `this.computedStyle`, which is a reference to the mentioned above `CSSStyleDeclaration` instance.
 
 ```javascript
+constructor () {
+  // ...
+
+  this.computedStyle = window.getComputedStyle(this.node)
+
+  // ...
+}
+
 getStyle () {
   return getCopy(this.computedStyle)
 }
 ```
 
-Where `this.computedStyle` which is a reference to the mentioned above `CSSStyleDeclaration` instance:
-
-```javascript
-this.computedStyle = window.getComputedStyle(this.node)
-```
-
 ### Observing Other Elements
 
-It would be more or less it if we didn't care about other elements like parents' attribute changes or `style`/`link[rel=stylesheet]` insertion on removal. To do so, we need another entity, which I called `DocumentObserver`, to watch document subtree modifications including attribute changes. It looks like this in the class `constructor`:
+This would be it more or less, if we didn't care about other elements. Take the case when element's parent node attributes change or `style` or `link[rel=stylesheet]` is inserted or removed from the document. To prepare for this, there is another object that I called `DocumentObserver`. It watches document sub-tree modifications including attribute changes.
 
 ```javascript
-this.observer = new window.MutationObserver(mutations => mutations.forEach(this.observe.bind(this)))
-this.observer.observe(window.document, {
-  attributes: true,
-  attributeFilter: ['class'],
-  childList: true,
-  subtree: true
-})
+class DocumentObserver {
+  constructor() {
+    // ...
+
+    this.observer = new window.MutationObserver(mutations => mutations.forEach(this.observe.bind(this)))
+    this.observer.observe(window.document, {
+      attributes: true,
+      attributeFilter: ['class'],
+      childList: true,
+      subtree: true
+    })  
+
+    // ...
+  }
+
+  // ...
+}
 ```
 
-It's quite similar to the other `MutationObserver` use case but here we treat every `mutation` separately and watch changes on `window.document`. Here we say roughly this: observe `class` attribute modifications and children insertion/removal for `window.document` and its children. Then call `this.observe` for any relevant mutation.
+It's quite similar to the other `MutationObserver` use case but here we treat every `mutation` separately and watch changes on `window.document`. Roughly speaking, we want to observe `class` attribute modifications and children insertion/removal for `window.document` and its children. Then we call `observe` for any relevant mutation.
 
-Observation code is very simple:
+Observation code is very simple.
 
 ```javascript
 observe (mutation) {
@@ -96,32 +108,31 @@ observe (mutation) {
 }
 ```
 
-Essentially, it checks the type of the mutation and proceeds to a corresponding branch. It's either call to `this.invokeAll`, which just invokes all subscribers, or a few additional checks aimed to call `this.invokeAll` only when a `link` or a `style` element is inserted.
+Essentially, it checks the type of the mutation and proceeds to a corresponding branch. It's either calling `invokeAll` directly, which just invokes all subscribers, or performing a few checks for element types in order to call `invokeAll` for links or stylesheets.
 
-This part, the `DocumentObserver`, is used from within `SauronStyle` like that:
+This part, the `DocumentObserver`, is instantiated in SauronStyle class.
 
 ```javascript
 this.documentObserver = getDocumentObserver()
 this.listenerId = this.documentObserver.addListener(this.checkDiff)
 ```
 
-First, we use it as a singleton because we only have one document. Second, we subscribe the same `this.checkDiff` to relevant changes to the document.
+First, we use it as a singleton because we only have one document. Second, we subscribe the same `checkDiff` to relevant changes to the document.
 
 ## Issues
 
-Well, this seems to work decently well but are there any problems?
+Well, the code I described seems to work decently but are there any problems?
 
 First of all, the performance is low. We often call `getComputedStyle` and a call takes a few milliseconds, from 1 to 5-6 on my MacBook '2013. It's slow. Imagine a few thousand elements on a page which you want to observe. Will it take a few seconds to react to a DOM change? Yes, it will.
 
-Second, the algorithm is more of proof-of-concept quality rather than production-ready. We call `checkDiff` method extensively, for any change in DOM that sometimes won't be related at all to the element we observe. I guess this additional computational complexity can be eliminated by computing and storing element styles outside DOM. But this could lead to more mistakes in difference detection and *much bigger* comprehension complexity.
+Second, the library is more of proof-of-concept quality rather than a production-ready solution. We call `checkDiff` method extensively for any change in DOM, which sometimes won't be related at all to the element we observe. I guess this additional computational complexity can be eliminated by computing and storing element styles outside DOM. But this could lead to more mistakes in detecting differences and a much bigger comprehension complexity.
 
-I'm also not quite sure that I haven't forgotten any other ways to affect element styles.
+I'm also not quite sure that I haven't forgotten any other ways to update element's styles.
 
 ## How to Help
 
-- tell me if you have ever needed anything like that
-- think and share your thoughts about any other possible ways of detecting style changes
-- give [the library](https://github.com/oleggromov/sauron-style) a star on GitHub
-- actually use it in one of your projects! 👻
+- Tell me if you have ever needed anything like that.
+- Think and share your thoughts about any other possible ways of detecting style changes.
+- Give [the library](https://github.com/oleggromov/sauron-style) a star on the GitHub or use it for one of your projects! 👻
 
 Thanks for your attention!
