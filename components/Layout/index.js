@@ -32,7 +32,7 @@ class Layout extends React.Component {
   get title() {
     const { title } = this.props
     const { titleSuffix } = this.props.common
-    return titleSuffix === title ? title : `${title} — ${titleSuffix}`
+    return titleSuffix === title ? title : `${title} / ${titleSuffix}`
   }
 
   renderHelmet() {
