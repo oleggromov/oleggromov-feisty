@@ -36,9 +36,16 @@ a.article-caption {
   bottom: 0;
 }
 
-/* ToDo: what if image is narrower than the container? */
+
 .article-caption-image img {
   max-height: 100%;
+}
+
+@media (min-width: 768px) {
+  .article-caption-image img {
+    max-height: none;
+    min-width: 100%;
+  }
 }
 
 .article-caption_cover .article-caption-container {
@@ -54,7 +61,7 @@ a.article-caption {
   top: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 50%);
+  background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 75%);
 }
 
 .article-caption-title,
