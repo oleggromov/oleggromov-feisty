@@ -11,3 +11,5 @@ excerpt: excerpt.md
 closing: closing.md
 more: Get familiar with the SauronStyle way of observing style changes →
 tags: software
+meta:
+  next: /array-splice-error-pattern
