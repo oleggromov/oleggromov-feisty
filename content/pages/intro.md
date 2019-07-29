@@ -1,3 +1,3 @@
-Here you can find a collection of my observations about developing software, leading and managing people & projects, and other things that I found worth sharing.
+Here you can find a collection of my observations about creating software, leading and managing people & projects, and other things that I found worth spending time on, researching, and writing about. Please leave a word when you find something interesting or useful.
 
-I will be grateful if you comment on what you find interesting. It's good to have you here 😜
+It's good to have you visit 😜

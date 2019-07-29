@@ -33,7 +33,7 @@ const PageIndex = ({ meta, data, common }) => {
       <Text content={data.intro} />
     </aside>
     <main>
-      <h1>{data.title}</h1>
+      <h1 className="page-index-caption">{data.title}</h1>
       <div>
         {renderAricles(data.pages)}
       </div>
