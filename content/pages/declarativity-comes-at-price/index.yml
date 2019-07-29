@@ -3,8 +3,12 @@ content: index.md
 title: Declarativity Comes at a Price
 published: 2017-07-02
 written: 2017-06-20
+updated:
+  - date: 2019-07-29
+    reason: Update language and grammar
 excerpt: excerpt.md
-more: What I state in this article’s title can be split in a few theses.
-tags: software
+more: Would you agree that declarative isn't necessarily better than imperative?
+closing: closing.md
+# tags: software
 meta:
   next: /array-splice-error-pattern
