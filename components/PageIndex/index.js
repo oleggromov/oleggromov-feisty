@@ -13,12 +13,17 @@ const renderAricles = articles =>
     const { title, published, excerpt, more, cover } = page.data
     const { url } = page.meta
 
+    const moreSuffix = more.match(/\s?→$/) ? ' →' : ''
+    const moreTransformed = more.replace(/\s?→$/, '')
+
     // ToDo: refactor the component so it doesn't rely on index
     return <article className="page-index-article" key={url}>
       <ArticleCaption title={title} url={url} date={published} cover={cover} />
       <Text content={excerpt} />
       <p>
-        <a href={url}>{more}</a>
+        <a className="page-index-more" href={url}>
+          <span>{moreTransformed}</span>{moreSuffix}
+        </a>
       </p>
     </article>
   })

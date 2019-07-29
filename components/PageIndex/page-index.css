@@ -9,3 +9,11 @@
 .page-index-article:first-child {
   margin-top: 0;
 }
+
+a.page-index-more {
+  text-decoration: none;
+}
+
+a.page-index-more span {
+  text-decoration: underline;
+}
