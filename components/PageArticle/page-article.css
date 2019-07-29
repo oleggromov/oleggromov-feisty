@@ -1,5 +1,11 @@
 .page-article-content {
-  margin: 1em 0 2em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .page-article-content {
+    margin-top: 1em;
+  }
 }
 
 .page-article-comments {

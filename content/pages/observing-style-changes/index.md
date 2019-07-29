@@ -4,7 +4,7 @@ So, I decided to build a tool and called it `SauronStyle`. Please take a look an
 
 ## How to Observe
 
-Leaving the *why?* behind the scene, let's jump right to *how*. There're a few ways to update element styling I could remember.
+Assuming you know the answer to why you need to track style changes, let's fast forward to how you do so. There're a few ways to update element styling I can think of right away.
 
 - Update its `class` or `style` directly.
 - Update its parents' attributes, respectively.
@@ -16,7 +16,7 @@ So what does it provide us with? Simply the ability to subscribe to attribute ch
 
 ## How to Check for a Difference
 
-When we know something has changed, we should check if there are any actual changes since the changes we noticed might be unrelated. To do so, we will use `getComputedStyle` - a useful method on `window` supported by any modern browser starting from IE9. It returns a flat object of all CSS properties with values in a similar to CSS "computed style" tab in Chrome.
+When we know something has changed, we should check if there were any actual changes since the changes we noticed might have not affected element rendering. To do so, we will use `getComputedStyle` - a useful method on `window` supported by any modern browser starting from IE9. It returns a flat object of all CSS properties with values in a similar to CSS "computed style" tab in Chrome.
 
 Importantly, it returns a live [`CSSStyleDeclaration` instance](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration), which changes over time forcing us to keep a copy of it.
 
