@@ -1,4 +1,6 @@
 page: '404'
-title: URL Not Found
+title: Page Not Found
 content: content.md
 lucky: lucky.md
+meta:
+  writePath: '~/404.html'
