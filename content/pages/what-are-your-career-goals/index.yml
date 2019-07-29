@@ -3,6 +3,12 @@ content: index.md
 title: What Are Your Career Goals?
 published: 2017-07-22
 written: 2017-07-22
-updated: 2019-07-20
+updated:
+  - date: 2019-07-20
+  - date: 2019-07-29
+    reason: Update the language and fix grammar issues
 excerpt: excerpt.md
-more: Read the answer to the one of the most important questions in a developer’s life
+more: Have you also faced questions like that about your career and life?
+closing: closing.md
+meta:
+  next: /declarativity-comes-at-price
