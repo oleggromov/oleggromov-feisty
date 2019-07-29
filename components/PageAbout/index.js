@@ -11,7 +11,7 @@ const renderLink = (name, { url, title }) => {
   const prefix = title.match(/^@/) ? '@' : ''
   const trimmedTitle = title.replace(/^@/, '')
   return <li className={name} key={url}>
-    <a href={url} target="_blank" rel="noopener">
+    <a href={url} target="_blank" rel="noopener" title={name}>
       {prefix}<span>{trimmedTitle}</span>
     </a>
   </li>
