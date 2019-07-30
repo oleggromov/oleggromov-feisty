@@ -18,7 +18,7 @@ const renderLink = (name, { url, title }) => {
 }
 
 const PageAbout = ({ meta, data, common }) => {
-  return <Layout common={common} title={data.title} description={meta.description}>
+  return <Layout common={common} title={data.title} meta={meta}>
     <main>
       <Caption>
         <h1>{data.title}</h1>

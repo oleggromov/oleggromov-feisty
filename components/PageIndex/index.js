@@ -29,7 +29,7 @@ const renderAricles = articles =>
   })
 
 const PageIndex = ({ meta, data, common }) => {
-  return <Layout common={common} title={data.title} description={meta.description} hideLogo noLogoLink>
+  return <Layout common={common} title={data.title} meta={meta} hideLogo noLogoLink>
     <Caption>
       <Logo scale={2} />
     </Caption>

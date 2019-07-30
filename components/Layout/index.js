@@ -13,6 +13,17 @@ import './layout.css'
 import favicon32 from '../favicon-32.png'
 import favicon180 from '../favicon-180.png'
 
+const getCanonical = url => {
+  const domain = 'https://oleggromov.com'
+  if (!url || url === '/') {
+    return domain
+  } else if (url.match(/^\/*/)) {
+    return domain + url.replace(/^\/*/, '/')
+  }
+
+  throw new Error(`Cannot generate canonical for ${url}`)
+}
+
 class Layout extends React.Component {
   constructor(props) {
     super(props)
@@ -36,15 +47,18 @@ class Layout extends React.Component {
   }
 
   renderHelmet() {
+    const { description, url } = this.props.meta
+
     if (!this.state.client) {
       const { GA_ID } = process.env
       return <Helmet>
         <title>{this.title}</title>
-        {this.props.description && <meta name="description" content={this.props.description} />}
+        {description && <meta name="description" content={description} />}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link href={favicon32} rel="icon" type="image/png" />
         <link href={favicon180} rel="apple-touch-icon" type="image/png" />
+        <link rel="canonical" href={getCanonical(url)} />
         <link rel="prefetch" href="/about" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         {GA_ID && <script async="async" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}

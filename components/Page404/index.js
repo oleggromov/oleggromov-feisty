@@ -7,14 +7,14 @@ import './404.css'
 
 const getRandom = limit => Math.floor(Math.random() * limit)
 
-const Page404 = ({ common, data }) => {
+const Page404 = ({ common, meta, data }) => {
   const tryLuck = (e) => {
     e.preventDefault()
     const randomPage = common.pages[getRandom(common.pages.length)]
     window.location = randomPage.meta.url
   }
 
-  return <Layout common={common} title={data.title}>
+  return <Layout common={common} meta={meta} title={data.title}>
     <Caption>
       <h1 className="not-found-caption">404<br />{data.title}</h1>
     </Caption>
