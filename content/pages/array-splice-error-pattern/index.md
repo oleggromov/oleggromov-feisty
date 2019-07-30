@@ -1,80 +1,88 @@
-Imagine you’re writing an algorithm which performs looping over an array with any type of pointer (`for` or `while` loop, `forEach`, `map` etc). Each iteration the pointer moves in any direction, but you never force it to come back in the most of cases. Why should you? This mode of manipulating data is so much usual that your probably have never ever thought of its liability to hard-to-find annoying errors which will lead you toward wearing debugging!
+Imagine you’re writing an algorithm that performs looping over an array with any type of pointer (`for` or `while` loop, `forEach`, `map`, etc). Each iteration the pointer moves in any direction, but you never force it to come back in most cases. Why should you, after all?
 
-The erroneous pattern is very simple and obvious. Say you need to map some action to all array elements and write.
+This mode of manipulating data is so usual that you probably have never thought about how liable it is to causing hard-to-find bugs, which lead you towards tiresome debugging!
+
+The erroneous pattern is very simple and obvious. Say you need to map some action to every array element and output it.
 
 ```javascript
-var arr = [1, 2, 3];
-arr.forEach(act);
+const arr = [1, 2, 3]
+arr.forEach(act)
 
 function act(item) {
-	console.log(item);
+	console.log(item)
 }
 ```
 
-This will simply iterate through an array of numbers and call act function by turns with each item as an argument. Very obvious, isn’t it? The thing works fine until the function doesn’t change anything. But the problem appears once you decide to change something in the array (e.g. remove unused empty elements) retaining this algorithm. You modify the callback in the following way.
+This will simply iterate over an array of numbers and call `act` with each item as an argument. Very obvious, isn’t it?
+
+The thing works fine until you decide to mutate array when iterating over it. You might, for example, modify the callback in the following way.
 
 ```javascript
 function act(item, index) {
 	if (item) {
-		console.log(item);
+		console.log(item)
 	} else {
-		arr.splice(index, 1);
+		arr.splice(index, 1)
 	}
 }
 ```
 
-The new version of act will print an element if it exists but also take care of absent or empty elements by removing them from an array. The splice method is a good choice to do such type of manipulation. Even if you stare at this code for a minute you maybe won’t exhibit it’s deceptive nature. Intuitively the way of moving through array items one by one seems possibly the most safe way of doing something. But wait. What if an array can be changed during the manipulation?
+The new version of `act` outputs an element if it exists but also takes care of absent or empty elements by removing them from the array.
 
-My guess is you’ve already understood what happens in that case. The `forEach` method implicitly (or for loop explicitly in turn) moves the iterator over an elements of array, counting from the first one to the last one. Until we have an array of truthy values nothing can happen with the defined above function. But a single element will be skipped for each falsy one in an array! The act method called on the `[1, undefined, 3, 4, undefined, 5]` array will only log `1` and `4` because it latently moves the pointer as often as encounters an empty element by deleting it, and thus changes the array length and omits an item.
+The `splice` method is a good choice to do such manipulation. Even if you stare at this code for a minute you maybe won’t exhibit its deceptive nature. Internally and intuitively, at least to me, moving through array just one item after another seems the like the safest way of doing things.
 
-## The only possible fix
+But wait! What if an array can be changed during the manipulation?
 
-**Warning!** All this stuff written above and below can originate only from the misunderstanding of `forEach`. The correct and, I claim, the _only fix that is worth knowing of_ is to not modify any array from within a `forEach` loop. There're modifying methods of arrays that should be used in similar cases: `filter`, `map`, `reduce`.
+My guess is you’ve already understood what happens in that case. The `forEach` method internally moves the iterator over array elements, counting from the first to the last one.
 
-The code above should be rewritten in the following manner:
+Until we have an array of "truthy" values nothing can happen with the callback. But an element will be skipped for each "falsy" one in an array!
+
+The mutating version of `act` method called on the `[1, undefined, 3, 4, undefined, 5]` array will only log `1` and `4` because it internally moves the pointer one step forward every time you delete another item, and hence changes the array length, which leads to omitting an item per deletion.
+
+## The Only Correct Fix
+
+**Warning!** All the stuff described above and below may very well originate only from the misunderstanding of `forEach`. The correct and, I claim, the **only fix that is worth knowing of** is to avoid array modifications from within declarative loops when you don't directly control the pointer.
+
+There is the `filter` method to help you cleaning the array before iterating over it. And the code above should be rewritten as follows.
 
 ```javascript
-var arr = [1, 2, undefined, 3];
-arr = arr.filter(item => {
-	console.log(item);
-	return Boolean(item);
-});
+const arr = [1, 2, undefined, 3]
+arr = arr.filter(item => Boolean(item))
 
-console.log(arr);
-> [1, 2, 3];
+console.log(arr)
+> [1, 2, 3]
 ```
 
-As the `filter` method decides wheter to keep or to delete each item on the callback return value, we simply return `false` for falsy array items.
+As the `filter` method decides whether to keep or delete each item based on the callback return value, we simply return `false` for "falsy" array items. Note that I usually explicitly convert anything to boolean to make it easier to understand.
 
-## Quick fix
+## Quick Fix
 
-I consider there’re a few options of how to deal with those cases.
+I would consider a few options to deal with such cases.
 
-This first one is to modify for loop to empower it to check if the array length was changed and then shift the pointer. I don’t like this way because it’s too awkward and shitty — conceive you’re decided to manipulate an array in another method, but the looping part for some reason should know about external manipulation possibility.
+This first one is to modify the loop method so it checks if the array length has changed and then move the pointer accordingly. I don’t like this way because it’s awkward and over-complicated.
 
-The second approach is to lock the array like in concurrent computing until the loop is over. It is rather complicated for such pristine algorithm, although far more conscientious.
+The second approach is to lock the array similar to concurrent computing until the loop is over. It is rather complicated for a simple algorithm, although definitely more appealing.
 
-The third one I prefer is not to modify array’s length at all, but replace an item with undefined value instead of it. It is very simple and seems more efficient if we suppose an array could be large.
+The third one I prefer is not to modify array’s length at all, but replace an item with undefined value instead of it. It is very simple and seems to be more efficient if we make no assumptions about possible array length.
 
+### Fix in a Functional Programming Manner
 
-### Fix in a functional programming manner
+A small discussion on Twitter with [@lukaszwojciak](//twitter.com/lukaszwojciak) and [@DanShappir](//twitter.com/DanShappir) had nudged me to think of an array cloning as a real option.
 
-Small discussion in twitter with [@lukaszwojciak](//twitter.com/lukaszwojciak) and [@DanShappir](//twitter.com/DanShappir) compelled me to think of an array cloning as a real option. It's said to be fast enough because arary clone makes only shallow copy leaving objects untouched and _pretty simple_, which is the most important reason one should be guided by while attempting to write good well understandable code.
+It's said to be fast enough because cloning makes only shallow copies leaving massive objects untouched. This approach is also **very simple**, which is the most important reason to use it after all.
 
-So the best solution looks simple:
+So the best solution looks the simplest.
 
 ```javascript
-var arr = [1, 2, 3];
-arr.concat().forEach(act);
+const original = [1, 2, undefined, 3]
+original
+	.concat()
+	.filter(item => Boolean(item))
+	.forEach(act)
 
-function act(item, index) {
-	if (item) {
-		console.log(item);
-	} else {
-		arr.splice(index, 1);
-	}
+function act(item) {
+	console.log(item)
 }
 ```
 
-## What do you think
-Have something to say on this erroneous pattern? Please use the comment form below to share your thoughts!
+Here we just use `concat` which shall combine arrays for its side effect of returning a shallow copy. This is a bit of JavaScript insanity and we won't obsess over it.

@@ -2,8 +2,12 @@ page: article
 content: index.md
 title: Array.splice Error Pattern
 published: 2016-02-09
+updated:
+  - date: 2019-07-30
+    reason: Update language and grammar
 excerpt: excerpt.md
-more: Already understood what happens?
-tags: software
+more: How you should and should not mutate an array within a loop →
+closing: closing.md
+# tags: software
 meta:
   next: /declarativity-comes-at-price
