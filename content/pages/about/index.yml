@@ -1,5 +1,5 @@
 page: about
-title: About Me
+title: About Oleg
 avatarLine: ../../partials/avatar-line.yml
 intro: intro.md
 interests: interests.md
@@ -26,3 +26,5 @@ links:
     url: https://www.facebook.com/oleg.v.gromov
     title: Oleg Gromov
 closing: closing.md
+meta:
+  description: Did you look up "Oleg Gromov" seeking a software engineer and manager? It's me. I just wrote this description to claim more screen estate on Google 😜

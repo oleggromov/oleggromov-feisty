@@ -3,3 +3,5 @@ pages: ^(?!(\/about|\/|\/404)$)
 title: Article List
 intro: intro.md
 avatarLine: ../partials/avatar-line.yml
+meta:
+  description: I am Oleg and I have a website. I publish thoughts on software, leadership and management, and anything else that is worth sharing. Welcome to the party! 😜

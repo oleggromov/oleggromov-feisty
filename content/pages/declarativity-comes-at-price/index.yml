@@ -11,4 +11,5 @@ more: Would you agree that declarative isn't necessarily better than imperative?
 closing: closing.md
 # tags: software
 meta:
+  description: Declarative code is considered a "better" and cleaner alternative to imperative. For battle-tested solutions it is true, but what about code not written yet? 
   next: /array-splice-error-pattern

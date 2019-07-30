@@ -10,4 +10,5 @@ more: How you should and should not mutate an array within a loop →
 closing: closing.md
 # tags: software
 meta:
+  description: Usually, we consider loops the most robust language primitives we can always rely upon. Could potentially introduce hard to trace bugs using them at all?
   next: /declarativity-comes-at-price
