@@ -40,11 +40,13 @@ class Layout extends React.Component {
       const { GA_ID } = process.env
       return <Helmet>
         <title>{this.title}</title>
+        {this.props.description && <meta name="description" content={this.props.description} />}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link href={favicon32} rel="icon" type="image/png" />
         <link href={favicon180} rel="apple-touch-icon" type="image/png" />
         <link rel="prefetch" href="/about" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
         {GA_ID && <script async="async" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
         {GA_ID && <script>{`
           window.dataLayer = window.dataLayer || [];

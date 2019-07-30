@@ -72,7 +72,7 @@ class Header extends React.Component {
     return <div className="header" ref={this.headerRootRef}>
       <div className={`header-bar ${barClass}`}>
         <div className={`header-logo ${logoClass}`}>
-          <LogoWrapper className="header-logo-link" href={noLogoLink ? null : '/'}>
+          <LogoWrapper className="header-logo-link" href={noLogoLink ? null : '/'} title={noLogoLink ? null : 'Homepage'}>
             <Logo />
           </LogoWrapper>
         </div>
