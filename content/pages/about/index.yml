@@ -7,11 +7,11 @@ interestsCta: interests-cta.md
 experience:
   title: Experience Highlights
   items:
-    - period: August 2018 - Present
+    - period: April 2018 — Present
       text: toptal.md
-    - period: November 2017 - March 2018
+    - period: November 2017 — March 2018
       text: klarna.md
-    - period: March 2014 - March 2017
+    - period: March 2014 — March 2017
       text: yandex.md
 experienceCta: experience-cta.md
 social: social.md

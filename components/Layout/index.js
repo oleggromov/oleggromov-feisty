@@ -14,6 +14,7 @@ import favicon32 from '../favicon-32.png'
 import favicon180 from '../favicon-180.png'
 
 const getCanonical = url => {
+  // ToDo get this from Feisty? 
   const domain = 'https://oleggromov.com'
   if (!url || url === '/') {
     return domain
