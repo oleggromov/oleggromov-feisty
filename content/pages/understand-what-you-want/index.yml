@@ -1,0 +1,11 @@
+page: article
+content: index.md
+title: Understand What You Want
+published: 2019-08-22
+written: 2019-08-22
+excerpt: excerpt.md
+closing: closing.md
+more: Why am I telling you this?
+# tags: productivity
+meta:
+  next: /what-are-your-career-goals
