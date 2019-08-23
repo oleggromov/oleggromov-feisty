@@ -14,7 +14,7 @@ import favicon32 from '../favicon-32.png'
 import favicon180 from '../favicon-180.png'
 
 const getCanonical = url => {
-  // ToDo get this from Feisty? 
+  // ToDo get this from Feisty?
   const domain = 'https://oleggromov.com'
   if (!url || url === '/') {
     return domain
@@ -56,7 +56,7 @@ class Layout extends React.Component {
         <title>{this.title}</title>
         {description && <meta name="description" content={description} />}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link href={favicon32} rel="icon" type="image/png" />
         <link href={favicon180} rel="apple-touch-icon" type="image/png" />
         <link rel="canonical" href={getCanonical(url)} />
