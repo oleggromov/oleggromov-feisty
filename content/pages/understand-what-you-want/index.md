@@ -49,26 +49,26 @@ However attractive it may seem to say “I want to become a new Bill Gates” or
 
 That’s because of the circumstances you and the real Bill Gates are in and, mostly, because of who you are. You can’t make a giant leap in one day. Even if you could, jumping from where you are won’t necessarily bring you to where he is or you think you will end up.
 
-There’s also some uncertainty and risk in following your dreams. You never know where they lead to. So you need courage and trust to step away from the well-known to something you could barely imagine.
+<p class="aside">
+There is a bunch of situations, ranging from toxic relationships to non-paying jobs, when giving up immediately could only benefit you. However, we leave those out of this article scope to focus on the important - how to help you achieve things you will be proud of.
+</p>
+
+There’s also some uncertainty and risk in following your dreams. You never know where it leads to. So you need courage and trust to step away from the well-known to something you could barely imagine.
+
+The key point is to stay consistent with who you are and where you are by making small steps towards what you want. This will raise your chances to succeed and get proud of what you’ve done.
 
 <p class="emphasis">
 Take up this adventure. It is going to be fun.
 </p>
 
-The key point is to stay consistent with who you are and where you are by making small steps towards what you want. This will raise your chances to succeed and get proud of what you’ve done.
-
-<p class="aside">
-There is a bunch of situations, ranging from toxic relationships to non-paying jobs, when giving up immediately could only benefit you. However, we leave those out of this article scope to focus on the important - how to help you achieve things you will be proud of.
-</p>
-
-After making an exercise of evaluating your chances of succeeding with particular endeavors, you will be able to estimate your odds of achieving things you care about in addition to the dimension of most-less attractive you’ve got at the first step.
+After making an exercise of evaluating your chances of succeeding with particular endeavors, you will be able to estimate your odds of achieving things you care about in addition to the priorities you’ve got at the first step.
 
 Next, grooming time.
 
 ## Discard Memes
 Another difficult thing to do is to stay true to your own values in the shade of crazy social media influencers and the imagery of beautiful and fulfilling lives they translate.
 
-Next, car commercials and Internet ads. Inspirational photographs. Books. Favorite movies and your mother’s marriage pictures. TV shows you obsessed over in your 20s.
+You may be not wasting time of your life. Then commercials and Internet ads get to you. Inspirational photographs. Books. Favorite movies and your mother’s marriage pictures. TV shows you obsessed over in your 20s.
 
 <p class="emphasis">
 Even if you happily ignore social media, there’s still a handful of things to get to you.
@@ -76,7 +76,7 @@ Even if you happily ignore social media, there’s still a handful of things to 
 
 I am not saying those are necessarily bad for you but the fact is, a human being is a product of the environment it grew up in, at least to a certain extent. Love it or not, some things are just artificially put into your mind, and you’ll have to deal with it.
 
-While saying to yourself “ok, I don’t really want to be a Brad Pit” may be an easy thing to do (especially if you’re not into his work), discarding something you just naturally feel great about may be much harder. After all, why should you?
+While saying to yourself “ok, I don’t really want to be a Brad Pitt” may be an easy thing to do (especially if you’re not into his work), discarding something you just naturally feel great about may be much harder. After all, why should you?
 
 For instance, we got a saying with my friends about “driving the motorbike into sunset”, meaning living the dream. Like the sunset on a Californian beach, with your beloved one near you, and all is good. In fact, this image came from the Californication series, which I watched at least 3 times.
 
@@ -100,21 +100,23 @@ Now you’ve got a list of things you definitely want to spend your time and att
 ## Get inspired
 Opposite to dull and shallow social media memes, there are smart, intelligent, and frank people you may look up to.
 
-They don’t advertise what they do if it was the only way of living a good life and don’t try to sell you on something. Instead, they share their methods and insights and leave a free lane for you to drive the exploration yourself.
+They don’t advertise what they do if it was the only way of living a good life, and don’t try to sell you on something. Instead, they share their methods and insights and leave a free lane for you to drive the exploration yourself.
 
 Some of my favorite inspirational examples are:
 - **Paul Dolan** who [studies happiness and speaks about it](https://www.youtube.com/watch?v=F9XUO-MOmaA).
-- **Nassim Taleb**, and his [thoughts about important of luck](https://www.youtube.com/watch?v=-aJka_CIxL4).
+- **Nassim Taleb**, and his [thoughts about importance of luck](https://www.youtube.com/watch?v=-aJka_CIxL4).
 - **Julian Shapiro** who wrote about [how to choose what to work on](https://www.julian.com/blog/life-planning).
 - **Jeff Bezos’s** anecdote about his [regret minimization framework](https://www.youtube.com/watch?v=jwG_qR6XmDQ).
 
-These or any other people won’t necessarily tell you what to do, how, or why. But somebody else’s thoughts, to me at least, usually help to kick-start my own thinking. Fortunately, because of the age we live in, so many studies and talks are just a click away from you.
+These or any other people won’t necessarily tell you what to do, how, or why. But somebody else’s thoughts, to me at least, usually help to kick-start my own thinking.
+
+Fortunately, because of the age we live in, so many studies and talks are just a click away from you.
 
 And sadly, it is hard to tell a bad example and role model from a good one immediately unless you have spent a decent time navigating through the subject yourself. But as  usually, you’ll learn to smell a rat with practice.
 
-These other genuine people may share their advice, stories, and tools not to earn a buck from you but to generously share experience, satisfy their own need for fulfilment. Just to do good.
+These genuine people may publish their advice, stories, and tools not to earn a buck from you but to generously share experience, satisfy their own need for fulfilment. Just to do good.
 
-Use wisely the informational abundance we live in, so that it makes you inspired, not withered.
+Use wisely the informational abundance we live in, so that it makes you flourish, not wither.
 
 
 ## Repeat
@@ -126,15 +128,20 @@ It takes me a few hours to sit down, open last notes I made (yes, I keep them on
 
 1. **Take some credit for achieving particular things.** It levels up my self-esteem and allows me to feel better because the things I have done easily add up to a coherent path leading me somewhere I want to be.
 
-2. **I reassess if I still value and want what I’ve planned for.** Sometimes I would see that although the thing I planned for still feels to be worthwhile, I am not making any progress. This would possibly lead me to changing the approach I take.
+2. **I reassess if I still value and want what I’ve planned for.** Sometimes I would see that although the thing I wrote down still feels to be worthwhile, I am not making any progress. This would possibly lead me to changing the approach I take.
 
-3. **It usually helps to think about what I want, need, and pursue over again** and sometimes come up with new priorities or some change to the existing ones.
+3. **It usually helps to think about what I want, need, and pursue over again** and sometimes come up with new priorities or some change the existing ones.
 
 For me, after almost a year of doing this, the entire process has become a habit which is deeply amusing and satisfying.
 
 
 ## Why Bother?
-No matter who you are and what circumstances you are in, there must be things universal to every living human. What is the meaning of life? Which things to dedicate your time to? How to not regret all these decisions in the future? And have fun in the process?
+
+Finally, why would you need all this trouble?
+
+I believe that doing what you’ve got to do, what makes you feel proud and evokes good sentiments and feelings, is essential for having a fulfilling life.
+
+No matter who you are and what circumstances you are in, there must be things universal to every living human. What is the meaning of life? Which things shall you dedicate your time to? How to not regret all these decisions in the future? And have fun in the process?
 
 Having a mind-blowing international career or parenting your second kid at home, starting your third business or being happy at work, you either do or neglect things you deeply care about.
 
