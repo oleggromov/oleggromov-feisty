@@ -6,11 +6,12 @@ const renderDate = date => (<p className="article-caption-date">
   <FormattedDate date={date} />
 </p>)
 
-const ArticleCaption = ({ title, url, date, cover, isPageCaption = false }) => {
+const ArticleCaption = ({ title, url, date, cover, coverType, isPageCaption = false }) => {
   const HeaderTag = isPageCaption ? 'h1' : 'h2'
   const WrapperTag = isPageCaption ? 'div' : 'a'
   const className = [
     cover ? 'article-caption_cover' : '',
+    coverType ? `article-caption_cover_${coverType}` : '',
     isPageCaption ? 'article-caption_page-caption' : ''
   ].join(' ')
   const href = !isPageCaption ? url : null

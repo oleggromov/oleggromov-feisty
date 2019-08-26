@@ -19,7 +19,7 @@ class PageArticle extends React.Component {
     const { meta, data, common } = this.props
     return <Layout common={common} title={data.title} meta={meta} useHighlight>
       <article className="page-article-content">
-        <ArticleCaption title={data.title} date={data.published} cover={data.cover} isPageCaption />
+        <ArticleCaption title={data.title} date={data.published} cover={data.cover} coverType={data.coverType} isPageCaption />
         <Text content={data.content} />
         <ArticleClosing published={data.published} closing={data.closing} />
       </article>
