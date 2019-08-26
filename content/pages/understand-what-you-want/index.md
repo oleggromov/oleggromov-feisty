@@ -10,7 +10,7 @@ Sounds quite fun, right?
 
 I am telling you this to make you think about what moved and impressed you in the past. If for me it was being uncommon and smart, tricking dumb systems built to restrict us and making other things, what was it for you?
 
-You can either take a way forward, from your earliest memories as a kid up till now, or backwards, from where you are now. Introspect and discover things that still evoke emotions. This, to me, is maybe the single most important signal of coming across something important.
+You can either take a way forward, from your earliest memories as a kid up till now or backward from where you are now. Introspect and discover things that still evoke emotions. This, to me, is maybe the single most important signal of coming across something important.
 
 <p class="emphasis">
 Look out for a burst of emotion. Passion. Flood of memories and the earliest dreams. Basically, the energy.
@@ -20,7 +20,7 @@ Everything evoking anything but boredom is what you may be in the search for. Lo
 
 Hate something? This could be a sign of something important to you as well.
 
-There’s no definitive algorithm, no wrong and right answers. It seems that this step, discovering what you really want, is the most important and challenging one on the road to happiness. It’s also inherently individual, even intimate.
+There’s no definitive algorithm, no wrong or right answers. It seems that this step, discovering what you really want, is the most important and challenging one on the road to happiness. It’s also inherently individual, even intimate.
 
 The rest is very technical in a sense. How you do things you care about. How to stay sane while making a living and achieving whatever it is you want to achieve. Which tools to use, you name it. I am pretty sure if you are lit up bright enough, you’ll find your way around technicalities.
 
@@ -35,9 +35,9 @@ The past experience you’ve got looks to be the first source of insights when l
 
 You may want to take enough time to introspect and possibly get rid of distractions.
 
-![Take a break](take-a-break.jpg "A guy taking break in Stockholm, Sweden. I made this shot on film in the beginning of 2018.")
+![Take a break](take-a-break.jpg "A guy is taking break in Stockholm, Sweden. I made this shot on film in the beginning of 2018.")
 
-Then take a break, let it breathe. Your unconsciousness needs time and space to unravel the strings of imagination. Possibly, a trip to the nature can help so you just sit there and observe eternally beautiful things. Or some other activity that fuels you up.
+Then take a break, let it breathe. Your unconsciousness needs time and space to unravel the strings of imagination. Possibly, a trip to nature can help so you just sit there and observe eternally beautiful things. Or some other activity that fuels you up.
 
 In the end, ideally, you will have a list of things you value, from small ideas you once had to whole philosophical concepts that may entail massive changes to everything you do if you implement them.
 
@@ -50,7 +50,7 @@ However attractive it may seem to say “I want to become a new Bill Gates” or
 That’s because of the circumstances you and the real Bill Gates are in and, mostly, because of who you are. You can’t make a giant leap in one day. Even if you could, jumping from where you are won’t necessarily bring you to where he is or you think you will end up.
 
 <p class="aside">
-There is a bunch of situations, ranging from toxic relationships to non-paying jobs, when giving up immediately could only benefit you. However, we leave those out of this article scope to focus on the important - how to help you achieve things you will be proud of.
+There is a bunch of situations, ranging from toxic relationships to non-paying jobs when giving up immediately could only benefit you. However, we leave those out of this article scope to focus on the important - how to help you achieve things you will be proud of.
 </p>
 
 There’s also some uncertainty and risk in following your dreams. You never know where it leads to. So you need courage and trust to step away from the well-known to something you could barely imagine.
@@ -66,9 +66,9 @@ After making an exercise of evaluating your chances of succeeding with particula
 Next, grooming time.
 
 ## Discard Memes
-Another difficult thing to do is to stay true to your own values in the shade of crazy social media influencers and the imagery of beautiful and fulfilling lives they translate.
+Another difficult thing to do is to stay true to your values in the shade of crazy social media influencers and the imagery of beautiful and fulfilling lives they translate.
 
-You may be not wasting time of your life. Then commercials and Internet ads get to you. Inspirational photographs. Books. Favorite movies and your mother’s marriage pictures. TV shows you obsessed over in your 20s.
+You may be not wasting the time of your life. Then commercials and Internet ads get to you. Inspirational photographs. Books. Favorite movies and your mother’s marriage pictures. TV shows you obsessed over in your 20s.
 
 <p class="emphasis">
 Even if you happily ignore social media, there’s still a handful of things to get to you.
@@ -78,7 +78,7 @@ I am not saying those are necessarily bad for you but the fact is, a human being
 
 While saying to yourself “ok, I don’t really want to be a Brad Pitt” may be an easy thing to do (especially if you’re not into his work), discarding something you just naturally feel great about may be much harder. After all, why should you?
 
-For instance, we got a saying with my friends about “driving the motorbike into sunset”, meaning living the dream. Like the sunset on a Californian beach, with your beloved one near you, and all is good. In fact, this image came from the Californication series, which I watched at least 3 times.
+For instance, we got a saying with my friends about “driving the motorbike into the sunset”, meaning living the dream. Like the sunset on a Californian beach, with your beloved one near you, and all is good. In fact, this image came from the Californication series, which I watched at least 3 times.
 
 Similarly, New York City. You know, in movies, it’s always like a wonderland. Skyscrapers, vibrant life, street food, gorgeous Central Park. “New York is a wonderful place” is also a meme I picked up.
 
@@ -92,7 +92,7 @@ It may very well turn out you really love New York life or Californian sunsets. 
 
 I did my own verification in 2016, when I visited NYC for a while, which in fact was my first trip abroad, and in 2017, when I lived in Los Angeles for almost half a year, studying English and exploring beautiful California.
 
-Interestingly enough, the picture in Califronication differed massively from what I saw myself. My experience was great but definitely, it got me back the energy of dreaming of living in California.
+Interestingly enough, the picture in Californication differed massively from what I saw myself. My experience was great but definitely, it got me back the energy of dreaming of living in California.
 
 Now you’ve got a list of things you definitely want to spend your time and attention on.
 
@@ -100,11 +100,11 @@ Now you’ve got a list of things you definitely want to spend your time and att
 ## Get inspired
 Opposite to dull and shallow social media memes, there are smart, intelligent, and frank people you may look up to.
 
-They don’t advertise what they do if it was the only way of living a good life, and don’t try to sell you on something. Instead, they share their methods and insights and leave a free lane for you to drive the exploration yourself.
+They don’t advertise what they do if it was the only way of living a good life and don’t try to sell you on something. Instead, they share their methods and insights and leave a free lane for you to drive the exploration yourself.
 
 Some of my favorite inspirational examples are:
 - **Paul Dolan** who [studies happiness and speaks about it](https://www.youtube.com/watch?v=F9XUO-MOmaA).
-- **Nassim Taleb**, and his [thoughts about importance of luck](https://www.youtube.com/watch?v=-aJka_CIxL4).
+- **Nassim Taleb**, and his [thoughts about the importance of luck](https://www.youtube.com/watch?v=-aJka_CIxL4).
 - **Julian Shapiro** who wrote about [how to choose what to work on](https://www.julian.com/blog/life-planning).
 - **Jeff Bezos’s** anecdote about his [regret minimization framework](https://www.youtube.com/watch?v=jwG_qR6XmDQ).
 
@@ -112,11 +112,11 @@ These or any other people won’t necessarily tell you what to do, how, or why. 
 
 Fortunately, because of the age we live in, so many studies and talks are just a click away from you.
 
-And sadly, it is hard to tell a bad example and role model from a good one immediately unless you have spent a decent time navigating through the subject yourself. But as  usually, you’ll learn to smell a rat with practice.
+And sadly, it is hard to tell a bad example and role model from a good one immediately unless you have spent a decent time navigating through the subject yourself. But as usual, you’ll learn to smell a rat with practice.
 
-These genuine people may publish their advice, stories, and tools not to earn a buck from you but to generously share experience, satisfy their own need for fulfilment. Just to do good.
+These genuine people may publish their advice, stories, and tools not to earn a buck from you but to generously share experience, satisfy their own need for fulfillment. Just to do good.
 
-Use wisely the informational abundance we live in, so that it makes you flourish, not wither.
+Use wisely the informational abundance we live in so that it makes you flourish, not wither.
 
 
 ## Repeat
