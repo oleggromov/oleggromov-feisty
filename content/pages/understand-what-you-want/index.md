@@ -8,12 +8,12 @@ Women loved him. He got the money and tricked the most advanced security systems
 
 Sounds quite fun, right?
 
-I am telling you this to make you think about what moved and impressed you in the past. If for me it was being uncommon and smart, tricking dumb systems built to restrict us and making other things, what was it for you?
+I am telling you this to make you think about what moved and impressed you in the past. If for me it was being uncommon and smart, tricking dumb systems built to restrict us, and building other things, what was it for you?
 
 You can either take a way forward, from your earliest memories as a kid up till now or backward from where you are now. Introspect and discover things that still evoke emotions. This, to me, is maybe the single most important signal of coming across something important.
 
 <p class="emphasis">
-Look out for a burst of emotion. Passion. Flood of memories and the earliest dreams. Basically, the energy.
+Look out for a burst of emotion. Passion. Restlessness. Flood of memories and the earliest dreams. Basically, the energy.
 </p>
 
 Everything evoking anything but boredom is what you may be in the search for. Love something? Wonderful, have more of it. Or even go deeper and try to understand what is it that you love, playing drums or being in the center of attention while on the stage.
@@ -24,12 +24,12 @@ There’s no definitive algorithm, no wrong or right answers. It seems that this
 
 The rest is very technical in a sense. How you do things you care about. How to stay sane while making a living and achieving whatever it is you want to achieve. Which tools to use, you name it. I am pretty sure if you are lit up bright enough, you’ll find your way around technicalities.
 
-To this part of identifying what you really, deeply care about and crave for, I hope to help a bit by sharing some ideas I found useful and utilize myself.
+With this part of identifying what you really, deeply care about and crave for, I hope to help a bit by sharing some ideas I found useful and utilize myself.
 
 
 ## Introspect
 
-First, take a paper and a pen and write down your thoughts. Recall your craziest ideas, something you dreamt of with your friends, something you strived for.
+First, take a paper and a pen and write down your thoughts. Recall your craziest ideas, something you’ve dreamt of with your friends, something you strived for.
 
 The past experience you’ve got looks to be the first source of insights when looking into what you want. At least if it had stuck with you once, shouldn’t it mean something?
 
