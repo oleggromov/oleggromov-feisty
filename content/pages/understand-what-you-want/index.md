@@ -35,7 +35,7 @@ The past experience you’ve got looks to be the first source of insights when l
 
 You may want to take enough time to introspect and possibly get rid of distractions.
 
-![Take a break](take-a-break.jpg "A guy is taking break in Stockholm, Sweden. I made this shot on film in the beginning of 2018.")
+![Take a break](taking-a-break.jpg "A guy is taking break in Stockholm, Sweden. I made this shot on film in the beginning of 2018.")
 
 Then take a break, let it breathe. Your unconsciousness needs time and space to unravel the strings of imagination. Possibly, a trip to nature can help so you just sit there and observe eternally beautiful things. Or some other activity that fuels you up.
 
@@ -68,15 +68,17 @@ Next, grooming time.
 ## Discard Memes
 Another difficult thing to do is to stay true to your values in the shade of crazy social media influencers and the imagery of beautiful and fulfilling lives they translate.
 
-You may be not wasting the time of your life. Then commercials and Internet ads get to you. Inspirational photographs. Books. Favorite movies and your mother’s marriage pictures. TV shows you obsessed over in your 20s.
+You are not wasting time on social media, huh? Then commercials and Internet ads get to you. Inspirational photographs. Books. Favorite movies and your mother’s marriage pictures. TV shows you obsessed over in your 20s.
 
 <p class="emphasis">
-Even if you happily ignore social media, there’s still a handful of things to get to you.
+There’s a variety of memes out there to breach your mind.
 </p>
 
 I am not saying those are necessarily bad for you but the fact is, a human being is a product of the environment it grew up in, at least to a certain extent. Love it or not, some things are just artificially put into your mind, and you’ll have to deal with it.
 
 While saying to yourself “ok, I don’t really want to be a Brad Pitt” may be an easy thing to do (especially if you’re not into his work), discarding something you just naturally feel great about may be much harder. After all, why should you?
+
+![Sunset in Santa Monica, CA](california-sunset.jpg "Sunset in Santa Monica, California. I took this picture in the Spring of 2017.")
 
 For instance, we got a saying with my friends about “driving the motorbike into the sunset”, meaning living the dream. Like the sunset on a Californian beach, with your beloved one near you, and all is good. In fact, this image came from the Californication series, which I watched at least 3 times.
 
@@ -137,13 +139,17 @@ For me, after almost a year of doing this, the entire process has become a habit
 
 ## Why Bother?
 
-Finally, why would you need all this trouble?
+Finally, why should you bother going through all of this?
 
 I believe that doing what you’ve got to do, what makes you feel proud and evokes good sentiments and feelings, is essential for having a fulfilling life.
 
 No matter who you are and what circumstances you are in, there must be things universal to every living human. What is the meaning of life? Which things shall you dedicate your time to? How to not regret all these decisions in the future? And have fun in the process?
 
 Having a mind-blowing international career or parenting your second kid at home, starting your third business or being happy at work, you either do or neglect things you deeply care about.
+
+<p class="emphasis">
+I am obviously biased toward living a life of great achievements, which is a meme. You must be having some biases too, specifically when it looks like the most natural perception.
+</p>
 
 Ignoring emotional signals of importance and neglecting your values and philosophy, even if you’re not aware of them yet, is literally toxic. It starts small but ends up huge. Fanciful dreams and deceptive views soak up the energy of life leaving you off the true things.
 
