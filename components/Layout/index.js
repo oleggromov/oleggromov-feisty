@@ -50,7 +50,7 @@ class Layout extends React.Component {
   }
 
   renderHelmet() {
-    const { description, ogDescription, url } = this.props.meta
+    const { description, url } = this.props.meta
     const { renderSocialMeta, ogType, ogImage, twitterType } = this.props
     const plainTitle = this.props.title
     const canonicalUrl = getAbsoluteURL(url)
@@ -79,14 +79,14 @@ class Layout extends React.Component {
         {renderSocialMeta && <meta property="og:title" content={plainTitle} />}
         {renderSocialMeta && <meta property="og:url" content={canonicalUrl} />}
         {renderSocialMeta && ogType && <meta property="og:type" content={ogType} />}
-        {renderSocialMeta && ogDescription && <meta property="og:description" content={ogDescription} />}
+        {renderSocialMeta && description && <meta property="og:description" content={description} />}
         {renderSocialMeta && ogImage && <meta property="og:image" content={coverUrl} />}
         {renderSocialMeta && twitterType && <meta property="twitter:card" content={twitterType} />}
         {renderSocialMeta && <meta property="twitter:title" content={plainTitle} />}
         {renderSocialMeta && <meta property="twitter:url" content={canonicalUrl} />}
         {renderSocialMeta && <meta property="twitter:site" content={TWITTER_ACCOUNT} />}
         {renderSocialMeta && <meta property="twitter:creator" content={TWITTER_ACCOUNT} />}
-        {renderSocialMeta && ogDescription && <meta property="twitter:description" content={ogDescription} />}
+        {renderSocialMeta && description && <meta property="twitter:description" content={description} />}
         {renderSocialMeta && ogImage && <meta property="twitter:image" content={coverUrl} />}
         <meta charset="utf-8" />
       </Helmet>
