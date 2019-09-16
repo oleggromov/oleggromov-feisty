@@ -1,0 +1,1 @@
+Please share situations when you or somebody else confused refactoring with rewriting, and vice versa. 

@@ -1,0 +1,1 @@
+Recently, while reading through Martin Fowler’s wonderful articles on software architecture, I came across his classical book “Refactoring” which apparently has been updated and published in a second edition. I got to know about this update when watching his energizing talk at Etsy Engineering in February this year.

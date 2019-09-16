@@ -1,0 +1,11 @@
+page: article
+title: Refactoring vs Rewriting Code
+content: index.md
+excerpt: excerpt.md
+more: How refactoring is different from rewriting code →
+closing: closing.md
+published: 2019-09-16
+written: 2019-09-16
+tags: sidenote, software
+meta:
+  description: Refactoring should be distinguished from rewriting code due to the vastly different goals. Engineers shall be certain when to apply it to bring the most value for the owners and users of software.
