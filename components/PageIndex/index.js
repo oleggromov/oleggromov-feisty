@@ -10,7 +10,7 @@ import './page-index.css'
 
 const renderAricles = articles =>
   articles.map(page => {
-    const { title, published, excerpt, more, cover, coverType } = page.data
+    const { title, published, excerpt, more, cover, coverType, tags } = page.data
     const { url } = page.meta
 
     const moreSuffix = more.match(/\s?→$/) ? ' →' : ''
@@ -18,7 +18,7 @@ const renderAricles = articles =>
 
     // ToDo: refactor the component so it doesn't rely on index
     return <article className="page-index-article" key={url}>
-      <ArticleCaption title={title} url={url} date={published} cover={cover} coverType={coverType} />
+      <ArticleCaption title={title} url={url} date={published} cover={cover} coverType={coverType} tags={tags} />
       <Text content={excerpt} />
       <p>
         <a className="page-index-more" href={url}>

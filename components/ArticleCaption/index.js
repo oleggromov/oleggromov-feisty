@@ -6,7 +6,14 @@ const renderDate = date => (<p className="article-caption-date">
   <FormattedDate date={date} />
 </p>)
 
-const ArticleCaption = ({ title, url, date, cover, coverType, isPageCaption = false }) => {
+const renderTags = tagStr => {
+  const tags = tagStr.split(',')
+  return (<p className="article-caption-tags">
+    {tags.map(tag => <span>{`#${tag.trim()}`}</span>)}
+  </p>)
+}
+
+const ArticleCaption = ({ title, url, date, cover, coverType, tags, isPageCaption = false }) => {
   const HeaderTag = isPageCaption ? 'h1' : 'h2'
   const WrapperTag = isPageCaption ? 'div' : 'a'
   const className = [
@@ -26,6 +33,7 @@ const ArticleCaption = ({ title, url, date, cover, coverType, isPageCaption = fa
         <img src={cover} alt={`${title} - cover image`} />
       </div>}
       {date && renderDate(date)}
+      {isPageCaption && tags && renderTags(tags)}
     </header>
   </WrapperTag>
 }
