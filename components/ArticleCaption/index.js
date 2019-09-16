@@ -8,7 +8,7 @@ const renderDate = date => (<p className="article-caption-date">
 
 const renderTags = tags => {
   return (<p className="article-caption-tags">
-    {tags.split(/\s*,\s*/).map(tag => <span>{`#${tag}`}</span>)}
+    {tags.split(/\s*,\s*/).map(tag => <span key={tag}>{`#${tag}`}</span>)}
   </p>)
 }
 
