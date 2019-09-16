@@ -2,7 +2,8 @@ page: article
 title: Refactoring vs Rewriting Code
 content: index.md
 excerpt: excerpt.md
-more: How refactoring is different from rewriting code →
+cover: refactoring-cover.png
+more: Here’s how refactoring is different from rewriting code →
 closing: closing.md
 published: 2019-09-16
 written: 2019-09-16

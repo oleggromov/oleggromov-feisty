@@ -1,4 +1,4 @@
-Recently, while reading through [Martin Fowler’s](https://martinfowler.com) wonderful articles on software architecture, I came across his classical book “Refactoring” which apparently has been updated and published in a second edition. I got to know about this update when watching his [energizing talk at Etsy Engineering](https://www.youtube.com/watch?v=6wDoopbtEqk) in February this year.
+Recently, while reading [Martin Fowler’s](https://martinfowler.com) wonderful articles on software architecture, I came across his classical book “Refactoring” which apparently has been updated and published in a second edition. I got to know about this update when watching his [energizing talk at Etsy Engineering](https://www.youtube.com/watch?v=6wDoopbtEqk) in February this year.
 
 
 ## Refactoring is not Rewriting 
