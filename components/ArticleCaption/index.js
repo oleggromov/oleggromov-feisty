@@ -6,10 +6,9 @@ const renderDate = date => (<p className="article-caption-date">
   <FormattedDate date={date} />
 </p>)
 
-const renderTags = tagStr => {
-  const tags = tagStr.split(',')
+const renderTags = tags => {
   return (<p className="article-caption-tags">
-    {tags.map(tag => <span>{`#${tag.trim()}`}</span>)}
+    {tags.split(',').map(tag => <span>{`#${tag.trim()}`}</span>)}
   </p>)
 }
 
