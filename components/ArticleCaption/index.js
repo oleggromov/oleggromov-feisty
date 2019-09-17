@@ -20,10 +20,9 @@ const ArticleCaption = ({ title, url, date, cover, coverType, tags, isPageCaptio
     coverType ? `article-caption_cover_${coverType}` : '',
     isPageCaption ? 'article-caption_page-caption' : ''
   ].join(' ')
-  const href = !isPageCaption ? url : null
 
   // ToDo: what if image is narrower than the container?
-  return <WrapperTag href={href} className={`article-caption ${className}`}>
+  return <WrapperTag href={!isPageCaption ? url : null} className={`article-caption ${className}`}>
     <header className="article-caption-container">
       <HeaderTag className="article-caption-title">
         {title}
